@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/fonts/fa-solid-900.woff2') format('woff2');
+}
+
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.fa-clock:before {
+    content: "\f017";
+}
+
+.fa-tag:before {
+    content: "\f02b";
+}
+
+.fa-arrow-left:before {
+    content: "\f060";
+}
+
+.fa-arrow-right:before {
+    content: "\f061";
+}
+
+.fa-check:before {
+    content: "\f00c";
+}
+
+.fa-check-circle:before {
+    content: "\f058";
+}
+
+.fa-times-circle:before {
+    content: "\f057";
+}
+
+.fa-crown:before {
+    content: "\f521";
+}
+
+.fa-exclamation-circle:before {
+    content: "\f06a";
+} 

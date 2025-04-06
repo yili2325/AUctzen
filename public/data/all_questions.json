@@ -1,0 +1,6120 @@
+[
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c400"
+    },
+    "category": "Australian values",
+    "question": "What does 'mateship' mean in Australian culture?",
+    "options": [
+      "Respect for authority",
+      "Helping each other",
+      "Individualism",
+      "Religious obedience"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mateship means helping and supporting others.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655856Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c401"
+    },
+    "category": "Australian values",
+    "question": "What is the meaning of \u2018a fair go\u2019 in Australian society?",
+    "options": [
+      "Unequal treatment",
+      "Equal opportunity",
+      "Privileged access",
+      "Economic advantage"
+    ],
+    "correctAnswer": 1,
+    "explanation": "It reflects the idea of equal opportunity for everyone.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655869Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c402"
+    },
+    "category": "Australian values",
+    "question": "Why is learning English important for Australian residents?",
+    "options": [
+      "It is the law",
+      "It helps integrate into society",
+      "To access TV",
+      "To pass driving test"
+    ],
+    "correctAnswer": 1,
+    "explanation": "English is the national language and helps with full participation.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655872Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c403"
+    },
+    "category": "Australian values",
+    "question": "What is the Rule of Law in Australia?",
+    "options": [
+      "The Prime Minister is above the law",
+      "Everyone must obey the law",
+      "Police make laws",
+      "Religious rules dominate"
+    ],
+    "correctAnswer": 1,
+    "explanation": "It means everyone is subject to the law.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655875Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c404"
+    },
+    "category": "Australian values",
+    "question": "What does mutual respect involve in Australian society?",
+    "options": [
+      "Agreeing with the majority",
+      "Valuing different opinions",
+      "Following orders",
+      "Religious conformity"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mutual respect means accepting and valuing differing views.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655878Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c405"
+    },
+    "category": "Australian values",
+    "question": "What does freedom of religion mean in Australia?",
+    "options": [
+      "Only one religion is allowed",
+      "No one may have religion",
+      "Practice any faith within the law",
+      "State decides religion"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australians are free to follow any religion as long as it abides by law.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655881Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c406"
+    },
+    "category": "Australian values",
+    "question": "What value encourages Australians to volunteer?",
+    "options": [
+      "Monetary reward",
+      "Mateship",
+      "Obligation",
+      "Political power"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Volunteering is a way of expressing mateship.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655884Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c407"
+    },
+    "category": "Australian values",
+    "question": "How does volunteering benefit Australian society?",
+    "options": [
+      "Reduces employment",
+      "Promotes individualism",
+      "Supports communities",
+      "Is mandatory"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Volunteering helps strengthen communities.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655888Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c408"
+    },
+    "category": "Australian values",
+    "question": "What is an important social value in Australia?",
+    "options": [
+      "Censorship",
+      "Tolerance",
+      "Uniformity",
+      "Silence"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Australians value tolerance of different views.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655891Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c409"
+    },
+    "category": "Australian values",
+    "question": "Why is respect for the law important in Australia?",
+    "options": [
+      "To avoid taxes",
+      "To avoid conflict",
+      "To ensure order and equality",
+      "To control minorities"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Respect for the law supports social order and fairness.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655894Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c410"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the role of the Governor-General?",
+    "options": [
+      "Leads military",
+      "Signs bills into law",
+      "Elects MPs",
+      "Judges court cases"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Governor-General gives Royal Assent to laws.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655898Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c411"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the Australian Constitution?",
+    "options": [
+      "A military rulebook",
+      "The supreme law",
+      "Religious guide",
+      "Economic manual"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Constitution is the supreme law that defines the government.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655902Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c412"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Which branch enforces laws in Australia?",
+    "options": [
+      "Judiciary",
+      "Parliament",
+      "Executive",
+      "Monarchy"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The executive enforces the laws.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655905Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c413"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What does the judiciary do?",
+    "options": [
+      "Enforces rules",
+      "Makes policies",
+      "Interprets laws",
+      "Monitors elections"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The judiciary interprets laws and ensures justice.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655908Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c414"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the role of Parliament?",
+    "options": [
+      "Approve court rulings",
+      "Enforce police action",
+      "Make and change laws",
+      "Monitor media"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Parliament debates and passes laws.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655911Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c415"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Who leads the federal government?",
+    "options": [
+      "Premier",
+      "Chief Justice",
+      "Prime Minister",
+      "Governor-General"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Prime Minister leads the government.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655917Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c416"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What does a referendum do?",
+    "options": [
+      "Elects a minister",
+      "Changes the Constitution",
+      "Changes voting rules",
+      "Appoints judges"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Referendums are used to approve changes to the Constitution.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655922Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c417"
+    },
+    "category": "Government and the law in Australia",
+    "question": "How often are federal elections held?",
+    "options": [
+      "Every 10 years",
+      "Every 5 years",
+      "Every 3 years",
+      "Annually"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Federal elections are usually every 3 years.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655926Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c418"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What does compulsory voting mean?",
+    "options": [
+      "You must vote",
+      "Only certain people vote",
+      "Voting is optional",
+      "Only leaders vote"
+    ],
+    "correctAnswer": 0,
+    "explanation": "All eligible citizens must vote in elections.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655931Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c419"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the separation of powers?",
+    "options": [
+      "Only Parliament has power",
+      "Government is divided into three branches",
+      "Citizens share power",
+      "Judges make policies"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Power is divided into executive, legislative and judicial branches.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655937Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c420"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What right allows you to express your opinions?",
+    "options": [
+      "Freedom of speech",
+      "Right to protest",
+      "Right to silence",
+      "Right to offend"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Freedom of speech allows peaceful expression of views.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655941Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c421"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What must all Australians follow?",
+    "options": [
+      "Religious traditions",
+      "Cultural laws",
+      "Australian laws",
+      "Parental advice"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Everyone must follow Australian law.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655947Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c422"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is one civic responsibility of citizens?",
+    "options": [
+      "To own land",
+      "To protest",
+      "To vote in elections",
+      "To work in government"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Voting is a legal duty.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655952Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c423"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is the meaning of equality under law?",
+    "options": [
+      "Equal pay for all",
+      "Same religious views",
+      "Equal legal treatment",
+      "Equal height"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Everyone is treated equally by law.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655957Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c424"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is freedom of association?",
+    "options": [
+      "Choosing religion",
+      "Joining legal groups",
+      "Publishing news",
+      "Migrating abroad"
+    ],
+    "correctAnswer": 1,
+    "explanation": "It means joining groups like unions or clubs.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655980Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c425"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "How does democracy protect liberty?",
+    "options": [
+      "Allows monarchy",
+      "Grants unchecked power",
+      "Provides legal freedoms",
+      "Restricts religion"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Democracy provides rights such as freedom and equality.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655983Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c426"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is an example of free speech?",
+    "options": [
+      "Hate speech",
+      "Inciting violence",
+      "Peaceful criticism",
+      "False advertising"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Peaceful criticism is protected under free speech.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655986Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c427"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is a democratic right in Australia?",
+    "options": [
+      "Be born in Australia",
+      "Own a car",
+      "Vote and be elected",
+      "Speak multiple languages"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Citizens have the right to vote and run for office.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655989Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c428"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Who is protected under Australian laws?",
+    "options": [
+      "Only citizens",
+      "Only voters",
+      "All people in Australia",
+      "Only natives"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Everyone in Australia must be treated equally under the law.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.655996Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c429"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Which liberty means choosing your religion?",
+    "options": [
+      "Speech",
+      "Association",
+      "Religion",
+      "Protest"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Freedom of religion allows faith choice.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.656000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c430"
+    },
+    "category": "Australia and its people",
+    "question": "What are the two Indigenous groups in Australia?",
+    "options": [
+      "British and Irish",
+      "Maori and Aboriginal",
+      "Aboriginal and Torres Strait Islander",
+      "Islanders and Colonists"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australia\u2019s Indigenous peoples are Aboriginal and Torres Strait Islander.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.656003Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c431"
+    },
+    "category": "Australia and its people",
+    "question": "Which state is the most populous?",
+    "options": [
+      "Queensland",
+      "South Australia",
+      "Victoria",
+      "New South Wales"
+    ],
+    "correctAnswer": 3,
+    "explanation": "NSW is the most populous state.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.656006Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c432"
+    },
+    "category": "Australia and its people",
+    "question": "Where is Canberra located?",
+    "options": [
+      "Victoria",
+      "New South Wales",
+      "ACT",
+      "Tasmania"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Canberra is in the Australian Capital Territory.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.656009Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c433"
+    },
+    "category": "Australia and its people",
+    "question": "What is the national anthem?",
+    "options": [
+      "Waltzing Matilda",
+      "God Save the King",
+      "Advance Australia Fair",
+      "Southern Land"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Advance Australia Fair' is the national anthem.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.656012Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c434"
+    },
+    "category": "Australia and its people",
+    "question": "What does Australia Day commemorate?",
+    "options": [
+      "First Parliament",
+      "Federation",
+      "First Fleet",
+      "Eureka Stockade"
+    ],
+    "correctAnswer": 2,
+    "explanation": "It marks the arrival of the First Fleet.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.656015Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c435"
+    },
+    "category": "Australia and its people",
+    "question": "What is the capital of Western Australia?",
+    "options": [
+      "Perth",
+      "Darwin",
+      "Brisbane",
+      "Adelaide"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Perth is the capital of WA.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.656017Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c436"
+    },
+    "category": "Australia and its people",
+    "question": "What is the national floral emblem?",
+    "options": [
+      "Rose",
+      "Wattle",
+      "Eucalyptus",
+      "Fern"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Golden Wattle is Australia\u2019s floral emblem.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.656020Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c437"
+    },
+    "category": "Australia and its people",
+    "question": "When did Australia federate?",
+    "options": [
+      "1788",
+      "1901",
+      "1945",
+      "1820"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Australia federated in 1901.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.656023Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c438"
+    },
+    "category": "Australia and its people",
+    "question": "What is a major natural icon of Australia?",
+    "options": [
+      "Eiffel Tower",
+      "Grand Canyon",
+      "Uluru",
+      "Mount Fuji"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Uluru is a major Australian landmark.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.656026Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c439"
+    },
+    "category": "Australia and its people",
+    "question": "What ocean borders Australia to the west?",
+    "options": [
+      "Pacific",
+      "Indian",
+      "Southern",
+      "Atlantic"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Indian Ocean lies to Australia's west.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2025-04-05T09:30:38.656029Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c540"
+    },
+    "category": "Australian values",
+    "question": "Why is tolerance important in a multicultural society?",
+    "options": [
+      "To promote dominance",
+      "To avoid diversity",
+      "To foster peaceful coexistence",
+      "To reduce productivity"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Tolerance helps different cultures live peacefully.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356384Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c541"
+    },
+    "category": "Australian values",
+    "question": "What is the importance of respecting others\u2019 beliefs?",
+    "options": [
+      "To create division",
+      "To silence opposition",
+      "To ensure religious freedom",
+      "To follow traditions"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Respecting beliefs is key to religious freedom.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356393Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c542"
+    },
+    "category": "Australian values",
+    "question": "Why are laws equally applied to all in Australia?",
+    "options": [
+      "Due to race",
+      "Due to democracy",
+      "To maintain inequality",
+      "To support monarchy"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Equality before law is a democratic principle.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356398Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c543"
+    },
+    "category": "Australian values",
+    "question": "How do Australians typically help others?",
+    "options": [
+      "Through taxation",
+      "Volunteering and mateship",
+      "Mandatory service",
+      "Religious duty"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mateship and volunteering are cultural norms.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356402Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c544"
+    },
+    "category": "Australian values",
+    "question": "Why do Australians value 'a fair go'?",
+    "options": [
+      "It promotes success for some",
+      "It reinforces status",
+      "It ensures equality",
+      "It avoids risk"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'A fair go' supports equal opportunity.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356405Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c545"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the function of the Senate?",
+    "options": [
+      "Pass local laws",
+      "Debate and vote on laws",
+      "Create business rules",
+      "Manage High Court"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Senators debate and vote on legislation.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356409Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c546"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Who appoints the Governor-General?",
+    "options": [
+      "Prime Minister",
+      "The King",
+      "Federal Court",
+      "The public"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The King appoints the Governor-General on PM's advice.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356413Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c547"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What level of government handles schools?",
+    "options": [
+      "Federal",
+      "Local",
+      "State",
+      "Parliament"
+    ],
+    "correctAnswer": 2,
+    "explanation": "State governments manage education.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356416Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c548"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is local government responsible for?",
+    "options": [
+      "National defense",
+      "Passports",
+      "Rubbish collection",
+      "High Court"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Local governments manage services like rubbish collection.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356419Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c549"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the role of Members of Parliament?",
+    "options": [
+      "Enforce law",
+      "Advise judges",
+      "Represent citizens",
+      "Control military"
+    ],
+    "correctAnswer": 2,
+    "explanation": "MPs represent the people in Parliament.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356422Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c550"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What does 'freedom of movement' mean?",
+    "options": [
+      "Stay in one place",
+      "Live only in cities",
+      "Travel freely within Australia",
+      "Apply to migrate"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Citizens can travel and live anywhere in Australia.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356427Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c551"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Why is voting compulsory in Australia?",
+    "options": [
+      "To increase participation",
+      "To punish citizens",
+      "To reduce elections",
+      "To control results"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Voting ensures democratic participation.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356430Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c552"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What does 'freedom of assembly' protect?",
+    "options": [
+      "Unauthorized protests",
+      "Private clubs",
+      "Peaceful gatherings",
+      "Business meetings"
+    ],
+    "correctAnswer": 2,
+    "explanation": "It protects peaceful protests and meetings.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356433Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c553"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Who protects human rights in Australia?",
+    "options": [
+      "The police",
+      "The High Court",
+      "The government and law",
+      "The army"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Human rights are protected by laws and institutions.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356436Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c554"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "How can citizens influence government?",
+    "options": [
+      "Using violence",
+      "Ignoring laws",
+      "Voting and petitions",
+      "Joining courts"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Citizens influence through voting and civil engagement.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356440Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c555"
+    },
+    "category": "Australia and its people",
+    "question": "Which city is known for the Sydney Opera House?",
+    "options": [
+      "Melbourne",
+      "Perth",
+      "Sydney",
+      "Adelaide"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sydney is home to the Opera House.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356444Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c556"
+    },
+    "category": "Australia and its people",
+    "question": "What landmark is sacred to Indigenous Australians?",
+    "options": [
+      "Great Barrier Reef",
+      "Uluru",
+      "Sydney Tower",
+      "Lake Eyre"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Uluru holds spiritual significance.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356447Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c557"
+    },
+    "category": "Australia and its people",
+    "question": "Which ocean lies to the east of Australia?",
+    "options": [
+      "Indian",
+      "Southern",
+      "Pacific",
+      "Arctic"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Pacific Ocean lies to the east.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356451Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c558"
+    },
+    "category": "Australia and its people",
+    "question": "Which state is known for the Great Barrier Reef?",
+    "options": [
+      "New South Wales",
+      "Victoria",
+      "Queensland",
+      "Tasmania"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Great Barrier Reef is in Queensland.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356454Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c559"
+    },
+    "category": "Australia and its people",
+    "question": "What is a common tradition on Anzac Day?",
+    "options": [
+      "New Year fireworks",
+      "Dawn service",
+      "Beach picnic",
+      "Gift exchange"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Australians attend dawn services on Anzac Day.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:35:43.356458Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c560"
+    },
+    "category": "Australian values",
+    "question": "What does 'equality' mean in Australian values?",
+    "options": [
+      "Different laws for different people",
+      "Same rights and responsibilities for everyone",
+      "Majority rule only",
+      "Special laws for religions"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Equality means everyone has the same legal rights and responsibilities.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709725Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c561"
+    },
+    "category": "Australian values",
+    "question": "What does being an 'Australian citizen' mean?",
+    "options": [
+      "Only living in Australia",
+      "Holding a job",
+      "Sharing Australian values and responsibilities",
+      "Speaking only English"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Citizenship involves embracing shared values and responsibilities.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709735Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c562"
+    },
+    "category": "Australian values",
+    "question": "Why is obeying the law important in Australia?",
+    "options": [
+      "To please police",
+      "To avoid education",
+      "To maintain order and fairness",
+      "To show power"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Obeying the law ensures fairness and order.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709739Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c563"
+    },
+    "category": "Australian values",
+    "question": "What role does volunteering play in society?",
+    "options": [
+      "Mandatory activity",
+      "Paid job",
+      "Supports communities and strengthens values",
+      "Political promotion"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Volunteering builds community support and reflects shared values.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709742Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c564"
+    },
+    "category": "Australian values",
+    "question": "What does \u2018tolerance\u2019 promote in a society?",
+    "options": [
+      "Uniform thinking",
+      "Respect for differences",
+      "Cultural superiority",
+      "Lawlessness"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tolerance allows diverse people to live peacefully.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709745Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c565"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the function of the House of Representatives?",
+    "options": [
+      "Appoint judges",
+      "Pass laws",
+      "Run local councils",
+      "Command police"
+    ],
+    "correctAnswer": 1,
+    "explanation": "It debates and passes new laws.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709750Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c566"
+    },
+    "category": "Government and the law in Australia",
+    "question": "How does Parliament check the power of government?",
+    "options": [
+      "By military action",
+      "By censorship",
+      "Through debate and questioning",
+      "By taxation"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Parliament checks government power through open debate.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709754Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c567"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What ensures the independence of courts?",
+    "options": [
+      "Military control",
+      "Government funding",
+      "Separation from legislative and executive powers",
+      "Public opinion"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Courts are independent from other branches of government.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709757Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c568"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is a federal election?",
+    "options": [
+      "A local election",
+      "A vote for Prime Minister",
+      "An election for national Parliament",
+      "An election for judges"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Federal elections decide national representatives.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709761Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c569"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Why is the Constitution important?",
+    "options": [
+      "It promotes religion",
+      "It outlines citizen income",
+      "It defines legal framework of government",
+      "It guarantees foreign aid"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Constitution establishes how government functions.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709764Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c570"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is one right all Australians have?",
+    "options": [
+      "Equal pay",
+      "Free university",
+      "Freedom of expression",
+      "Personal army"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australians have the right to express views legally.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709768Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c571"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What does 'responsibility' mean in a democracy?",
+    "options": [
+      "Having power",
+      "Being accountable for actions",
+      "Breaking the law",
+      "Protesting always"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Responsibility includes obeying laws and respecting others.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709772Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c572"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What must you do if you are summoned for jury duty?",
+    "options": [
+      "Ignore it",
+      "Attend unless exempted",
+      "Protest it",
+      "Choose a lawyer"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Jury duty is a legal obligation.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709775Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c573"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "How are democratic beliefs taught in Australia?",
+    "options": [
+      "Through religion",
+      "Through school and social norms",
+      "Through military service",
+      "Through royal decree"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Beliefs are promoted through education and values.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709778Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c574"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Why do Australians have rights and responsibilities?",
+    "options": [
+      "To balance power",
+      "To increase wealth",
+      "To confuse people",
+      "To control education"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rights come with responsibilities to ensure balance in society.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709781Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c575"
+    },
+    "category": "Australia and its people",
+    "question": "Which Australian state is an island?",
+    "options": [
+      "Victoria",
+      "Tasmania",
+      "Queensland",
+      "NSW"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tasmania is an island state.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709785Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c576"
+    },
+    "category": "Australia and its people",
+    "question": "Which city is the capital of Australia?",
+    "options": [
+      "Sydney",
+      "Canberra",
+      "Melbourne",
+      "Brisbane"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Canberra is the capital.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709789Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c577"
+    },
+    "category": "Australia and its people",
+    "question": "Which natural feature lies along Australia\u2019s northeast coast?",
+    "options": [
+      "Uluru",
+      "Great Ocean Road",
+      "Great Barrier Reef",
+      "Snowy Mountains"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Great Barrier Reef lies along the northeast coast.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709927Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c578"
+    },
+    "category": "Australia and its people",
+    "question": "What is the currency used in Australia?",
+    "options": [
+      "US Dollar",
+      "Euro",
+      "Australian Dollar",
+      "Pound"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australia uses the Australian Dollar.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709931Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c579"
+    },
+    "category": "Australia and its people",
+    "question": "Which continent is Australia part of?",
+    "options": [
+      "Europe",
+      "Asia",
+      "Africa",
+      "Australia"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Australia is both a country and a continent.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:44:20.709934Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c580"
+    },
+    "category": "Australian values",
+    "question": "What is a common value demonstrated in Australian communities?",
+    "options": [
+      "Isolation",
+      "Volunteering",
+      "Military discipline",
+      "Censorship"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Volunteering reflects community spirit and shared values.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412887Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c581"
+    },
+    "category": "Australian values",
+    "question": "Why is English language learning encouraged in Australia?",
+    "options": [
+      "To access free meals",
+      "To integrate and participate",
+      "To pass exams",
+      "To attend court"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Learning English helps migrants fully participate in society.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412898Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c582"
+    },
+    "category": "Australian values",
+    "question": "Which Australian value supports peaceful disagreement?",
+    "options": [
+      "Authority",
+      "Intolerance",
+      "Freedom of expression",
+      "Aggression"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Freedom of expression allows peaceful disagreement.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412901Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c583"
+    },
+    "category": "Australian values",
+    "question": "What is mateship based on?",
+    "options": [
+      "Economic benefit",
+      "Political power",
+      "Helping each other",
+      "Heritage"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mateship is about helping and supporting each other.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412904Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c584"
+    },
+    "category": "Australian values",
+    "question": "Which value ensures everyone has the same legal rights?",
+    "options": [
+      "Justice",
+      "Privilege",
+      "Equality",
+      "Tolerance"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Equality ensures everyone is treated the same by law.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412908Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c585"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the primary role of local councils?",
+    "options": [
+      "National laws",
+      "Collecting federal taxes",
+      "Local services and infrastructure",
+      "Managing High Court"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Local councils manage community services and infrastructure.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412911Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c586"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is one role of the Prime Minister?",
+    "options": [
+      "Judge court cases",
+      "Head the opposition",
+      "Lead the government",
+      "Elect governors"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The PM leads the government.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412915Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c587"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Why is separation of powers important?",
+    "options": [
+      "To avoid military rule",
+      "To ensure accountability",
+      "To confuse voters",
+      "To control media"
+    ],
+    "correctAnswer": 1,
+    "explanation": "It prevents one branch of government from gaining too much power.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412919Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c588"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Who forms the opposition in Parliament?",
+    "options": [
+      "Smallest party",
+      "Non-voters",
+      "Second largest party",
+      "High Court"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The second largest party forms the official opposition.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412922Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c589"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What does the Constitution guarantee?",
+    "options": [
+      "Religious dominance",
+      "Equality for tourists",
+      "Structure of government",
+      "Education funding"
+    ],
+    "correctAnswer": 2,
+    "explanation": "It defines the structure and powers of government.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412926Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c590"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Which right protects people\u2019s ability to practice their faith?",
+    "options": [
+      "Freedom of association",
+      "Freedom of religion",
+      "Right to silence",
+      "Freedom of media"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Freedom of religion protects individual faith choices.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412929Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c591"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What happens when someone breaks the law?",
+    "options": [
+      "They lose their property",
+      "They face legal consequences",
+      "They are promoted",
+      "They become famous"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Breaking the law results in legal action.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412940Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c592"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is a key democratic right?",
+    "options": [
+      "Free healthcare",
+      "Right to free speech",
+      "Guaranteed job",
+      "Free housing"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Freedom of speech is a core democratic right.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412943Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c593"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What makes democracy function in Australia?",
+    "options": [
+      "Royal rule",
+      "Military involvement",
+      "Participation of the people",
+      "One-party system"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Democracy depends on public participation.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412946Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c594"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Why must Australians obey the law?",
+    "options": [
+      "To get benefits",
+      "To maintain order",
+      "To earn money",
+      "To avoid work"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Obeying laws maintains peace and order.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412949Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c595"
+    },
+    "category": "Australia and its people",
+    "question": "What is a major river in Australia?",
+    "options": [
+      "Amazon",
+      "Murray River",
+      "Danube",
+      "Seine"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Murray River is one of Australia's longest rivers.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412953Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c596"
+    },
+    "category": "Australia and its people",
+    "question": "Which is an Australian territory?",
+    "options": [
+      "Victoria",
+      "Tasmania",
+      "Northern Territory",
+      "Queensland"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Northern Territory is a self-governing territory.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412956Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c597"
+    },
+    "category": "Australia and its people",
+    "question": "Which country is closest to Australia?",
+    "options": [
+      "Brazil",
+      "Vietnam",
+      "New Zealand",
+      "South Africa"
+    ],
+    "correctAnswer": 2,
+    "explanation": "New Zealand is one of Australia's closest neighbors.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412959Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c598"
+    },
+    "category": "Australia and its people",
+    "question": "Which city is known as Australia's cultural capital?",
+    "options": [
+      "Canberra",
+      "Melbourne",
+      "Perth",
+      "Darwin"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Melbourne is often considered the cultural capital.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412962Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c599"
+    },
+    "category": "Australia and its people",
+    "question": "What is the population trend in Australia?",
+    "options": [
+      "Declining",
+      "Steady",
+      "Rapidly increasing",
+      "Shrinking"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australia has a growing and diverse population.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:48:26.412965Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c600"
+    },
+    "category": "Australian values",
+    "question": "Which principle reflects treating others with dignity?",
+    "options": [
+      "Obedience",
+      "Intimidation",
+      "Respect",
+      "Secrecy"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Respect is central to Australian values.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160561Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c601"
+    },
+    "category": "Australian values",
+    "question": "What is one benefit of supporting each other in tough times?",
+    "options": [
+      "Financial gain",
+      "Legal protection",
+      "Social cohesion",
+      "Government favor"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mateship builds stronger, supportive communities.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160579Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c602"
+    },
+    "category": "Australian values",
+    "question": "How do Australians demonstrate active citizenship?",
+    "options": [
+      "By ignoring the law",
+      "By breaking rules",
+      "By volunteering and participating",
+      "By protesting only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Active citizenship includes community participation.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160583Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c603"
+    },
+    "category": "Australian values",
+    "question": "Why is accepting others\u2019 differences valued in Australia?",
+    "options": [
+      "To control media",
+      "To isolate opinions",
+      "To promote unity",
+      "To prevent growth"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Acceptance encourages peace and community.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160586Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c604"
+    },
+    "category": "Australian values",
+    "question": "Which value encourages being helpful without expecting a reward?",
+    "options": [
+      "Profit",
+      "Volunteering",
+      "Silence",
+      "Obedience"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Volunteering is about giving without expecting payment.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160589Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c605"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the role of elections in Australia?",
+    "options": [
+      "To change laws",
+      "To raise taxes",
+      "To choose representatives",
+      "To appoint judges"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Elections allow citizens to choose their representatives.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160593Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c606"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What ensures a fair legal process?",
+    "options": [
+      "Biased judges",
+      "Public opinion",
+      "Independent courts",
+      "Government control"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Independent courts ensure fairness.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160597Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c607"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Who can stand for election in Australia?",
+    "options": [
+      "Any permanent resident",
+      "Only judges",
+      "Eligible citizens",
+      "Minors"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Citizens can nominate themselves as candidates.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160601Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c608"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is an electorate?",
+    "options": [
+      "An electricity zone",
+      "A voting district",
+      "A court room",
+      "A military region"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Electorates are areas that elect representatives.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160604Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c609"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What does the executive branch do?",
+    "options": [
+      "Enforces laws",
+      "Debates bills",
+      "Manages courts",
+      "Oversees local events"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The executive carries out the laws.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160607Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c610"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is a responsibility that comes with freedom of speech?",
+    "options": [
+      "To offend others",
+      "To tell lies",
+      "To speak within the law",
+      "To remain silent"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Speech must be lawful and respectful.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160611Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c611"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Why are citizens encouraged to be informed?",
+    "options": [
+      "To avoid taxes",
+      "To vote wisely",
+      "To support one party",
+      "To ignore rules"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Informed citizens make better decisions.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160614Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c612"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is the significance of compulsory voting?",
+    "options": [
+      "To confuse voters",
+      "To ensure participation",
+      "To reduce options",
+      "To silence dissent"
+    ],
+    "correctAnswer": 1,
+    "explanation": "It ensures active democratic participation.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160617Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c613"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Why must all people obey Australian law?",
+    "options": [
+      "To avoid criticism",
+      "To gain favor",
+      "To uphold the Rule of Law",
+      "To win elections"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Everyone is subject to the Rule of Law.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160621Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c614"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "How do responsibilities help protect rights?",
+    "options": [
+      "They increase profits",
+      "They reduce freedom",
+      "They balance power",
+      "They silence voters"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Responsibilities help ensure others' rights are respected.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160623Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c615"
+    },
+    "category": "Australia and its people",
+    "question": "What does multiculturalism mean in Australia?",
+    "options": [
+      "One culture only",
+      "Shared cultural identity",
+      "Respect for diverse cultures",
+      "Erasing traditions"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Multiculturalism embraces all backgrounds.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160627Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c616"
+    },
+    "category": "Australia and its people",
+    "question": "Which is a major Australian industry?",
+    "options": [
+      "Farming",
+      "Ice sculpting",
+      "Fashion design",
+      "Automobile racing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Agriculture is a key industry.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160630Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c617"
+    },
+    "category": "Australia and its people",
+    "question": "Which Australian city hosts the Grand Prix?",
+    "options": [
+      "Sydney",
+      "Perth",
+      "Adelaide",
+      "Melbourne"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Melbourne hosts the Formula 1 Grand Prix.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160633Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c618"
+    },
+    "category": "Australia and its people",
+    "question": "What is the significance of Dreamtime stories?",
+    "options": [
+      "Historical myths",
+      "Entertainment",
+      "Indigenous spirituality and history",
+      "Modern art"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dreamtime stories are sacred to Indigenous Australians.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160637Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c619"
+    },
+    "category": "Australia and its people",
+    "question": "Which season occurs from December to February in Australia?",
+    "options": [
+      "Winter",
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Summer falls between December and February.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:53:33.160640Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c620"
+    },
+    "category": "Australian values",
+    "question": "Why is freedom of choice important in Australia?",
+    "options": [
+      "It reduces freedom",
+      "It encourages one religion",
+      "It allows people to live as they choose",
+      "It silences minorities"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Freedom of choice ensures personal autonomy.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220312Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c621"
+    },
+    "category": "Australian values",
+    "question": "What is the benefit of a respectful community?",
+    "options": [
+      "More government rules",
+      "Less freedom",
+      "Peaceful coexistence",
+      "Less diversity"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Respect leads to a more peaceful society.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220322Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c622"
+    },
+    "category": "Australian values",
+    "question": "Why is mateship important in emergencies?",
+    "options": [
+      "To follow orders",
+      "To encourage separation",
+      "To help each other out",
+      "To increase taxes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mateship encourages helping others in tough times.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220326Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c623"
+    },
+    "category": "Australian values",
+    "question": "What does volunteering teach young Australians?",
+    "options": [
+      "Anger",
+      "Discipline",
+      "Teamwork and social responsibility",
+      "Business skills"
+    ],
+    "correctAnswer": 2,
+    "explanation": "It fosters a sense of giving and responsibility.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220329Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c624"
+    },
+    "category": "Australian values",
+    "question": "What role does fairness play in Australian society?",
+    "options": [
+      "Supports hierarchy",
+      "Restricts equality",
+      "Promotes equal treatment",
+      "Reduces choice"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fairness means everyone has equal opportunity.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220333Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c625"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the term for changing the Constitution?",
+    "options": [
+      "Election",
+      "Amendment",
+      "Declaration",
+      "Mandate"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A change to the Constitution is called an amendment.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220336Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c626"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the Cabinet?",
+    "options": [
+      "Judges group",
+      "Army officials",
+      "Senior ministers in government",
+      "Parliament building"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Cabinet is composed of senior government ministers.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220341Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c627"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the name for a proposed law?",
+    "options": [
+      "Act",
+      "Petition",
+      "Bill",
+      "Directive"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A Bill is a proposed law in Parliament.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220344Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c628"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Why are state governments important?",
+    "options": [
+      "They appoint judges",
+      "They make laws for their state",
+      "They form the army",
+      "They print money"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Each state government handles its own responsibilities.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220348Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c629"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What does the term 'Commonwealth' refer to in Australia?",
+    "options": [
+      "The monarchy",
+      "The Constitution",
+      "The federal government",
+      "The High Court"
+    ],
+    "correctAnswer": 2,
+    "explanation": "It refers to the federal/national government.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220351Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c630"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "How can Australians express political views?",
+    "options": [
+      "Through violence",
+      "By forming political parties",
+      "Through military",
+      "By avoiding elections"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Australians can create or join political parties.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220354Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c631"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is an essential feature of Australian democracy?",
+    "options": [
+      "Single-party rule",
+      "Freedom of opinion",
+      "Religious law",
+      "Royal decrees"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Freedom of opinion is fundamental in democracy.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220358Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c632"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Why are responsibilities important with rights?",
+    "options": [
+      "They limit power",
+      "They reduce freedom",
+      "They ensure fairness",
+      "They cause protests"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Responsibilities balance and protect everyone\u2019s rights.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220361Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c633"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What does justice mean in Australia?",
+    "options": [
+      "Partial trials",
+      "Harsh penalties",
+      "Fair legal treatment",
+      "Community votes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Justice involves fair and impartial treatment.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220364Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c634"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "How are people protected from unfair laws?",
+    "options": [
+      "Public opinion",
+      "Media",
+      "Court systems and Constitution",
+      "Military power"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Courts and the Constitution ensure fairness.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220368Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c635"
+    },
+    "category": "Australia and its people",
+    "question": "What do national holidays celebrate?",
+    "options": [
+      "International events",
+      "Economic achievements",
+      "Cultural and historical milestones",
+      "Religious ceremonies"
+    ],
+    "correctAnswer": 2,
+    "explanation": "They mark important national history and values.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220372Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c636"
+    },
+    "category": "Australia and its people",
+    "question": "Why is the flag important?",
+    "options": [
+      "Shows monarchy",
+      "Represents sport",
+      "Symbolizes unity and national identity",
+      "Identifies currency"
+    ],
+    "correctAnswer": 2,
+    "explanation": "It represents the country\u2019s identity.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220375Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c637"
+    },
+    "category": "Australia and its people",
+    "question": "What does Australia Day recognize?",
+    "options": [
+      "Independence",
+      "First Fleet's arrival",
+      "Anzac soldiers",
+      "Federation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Australia Day commemorates the First Fleet in 1788.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220378Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c638"
+    },
+    "category": "Australia and its people",
+    "question": "What is a key theme of ANZAC Day?",
+    "options": [
+      "Entertainment",
+      "Religious devotion",
+      "Service and sacrifice",
+      "Harvest"
+    ],
+    "correctAnswer": 2,
+    "explanation": "ANZAC Day honors those who served in wars.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220382Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c639"
+    },
+    "category": "Australia and its people",
+    "question": "What does the Southern Cross on the flag symbolize?",
+    "options": [
+      "National flower",
+      "Military strength",
+      "Australia's location in the Southern Hemisphere",
+      "Immigration"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The stars represent Australia\u2019s place in the Southern Hemisphere.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:55:08.220385Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c640"
+    },
+    "category": "Australian values",
+    "question": "What does being a good neighbour demonstrate in Australian society?",
+    "options": [
+      "Respect for law",
+      "Loyalty to leaders",
+      "Community values and mateship",
+      "Support for business"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Being a good neighbour reflects mateship and respect.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982570Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c641"
+    },
+    "category": "Australian values",
+    "question": "How do Australians celebrate diversity?",
+    "options": [
+      "By restricting immigration",
+      "By embracing different cultures",
+      "By only speaking English",
+      "By closing borders"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Australians value and celebrate multiculturalism.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982582Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c642"
+    },
+    "category": "Australian values",
+    "question": "Why is fairness important in Australian sports and schools?",
+    "options": [
+      "To win more",
+      "To avoid complaints",
+      "To teach equality and respect",
+      "To support teams"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fairness teaches respect and equality from a young age.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982586Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c643"
+    },
+    "category": "Australian values",
+    "question": "What do Australians often do in times of natural disaster?",
+    "options": [
+      "Wait for government",
+      "Leave the country",
+      "Volunteer to help others",
+      "Ignore warnings"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Helping during crisis shows mateship.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982590Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c644"
+    },
+    "category": "Australian values",
+    "question": "What value promotes listening to other perspectives?",
+    "options": [
+      "Greed",
+      "Power",
+      "Respect",
+      "Domination"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Respect means considering others\u2019 views.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982593Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c645"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Who heads each state government in Australia?",
+    "options": [
+      "President",
+      "Premier",
+      "Mayor",
+      "Senator"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Premiers are the heads of state governments.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982596Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c646"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Which level of government handles driver's licenses?",
+    "options": [
+      "Federal",
+      "Territory",
+      "State",
+      "Local"
+    ],
+    "correctAnswer": 2,
+    "explanation": "States manage driving laws and licenses.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982600Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c647"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is a referendum used for?",
+    "options": [
+      "Create new laws",
+      "Amend the Constitution",
+      "Elect MPs",
+      "Elect judges"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Referendums are required for constitutional changes.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982604Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c648"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What does \u2018bicameral\u2019 mean in Australia's Parliament?",
+    "options": [
+      "One chamber",
+      "Three branches",
+      "Two houses",
+      "No parties"
+    ],
+    "correctAnswer": 2,
+    "explanation": "It means the Parliament has two houses.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982607Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c649"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What does the Speaker do in the House of Representatives?",
+    "options": [
+      "Votes on every law",
+      "Leads debates fairly",
+      "Chooses ministers",
+      "Protests laws"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Speaker moderates and manages debates.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982611Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c650"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Why is it important to respect others\u2019 rights?",
+    "options": [
+      "To avoid taxes",
+      "To promote freedom and fairness",
+      "To increase censorship",
+      "To support dominance"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Respecting others' rights maintains freedom.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982615Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c651"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What does freedom of the press ensure?",
+    "options": [
+      "Only good news",
+      "Media can\u2019t publish",
+      "Independent journalism",
+      "Censorship"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Free press means media operates without government control.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982618Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c652"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What happens if you are treated unfairly by a government agency?",
+    "options": [
+      "Stay silent",
+      "Go to court or file a complaint",
+      "Contact media",
+      "Call police"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Australians can challenge unfair treatment legally.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982621Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c653"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "How is equality shown in court?",
+    "options": [
+      "One side always wins",
+      "Judge decides based on opinion",
+      "Both parties have equal say",
+      "Media influences decision"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Courts ensure fair treatment for all.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982624Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c654"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is a civic duty of every Australian citizen?",
+    "options": [
+      "Travel abroad",
+      "Run for office",
+      "Follow Australian laws",
+      "Become a judge"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Citizens must follow the laws of the country.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982627Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c655"
+    },
+    "category": "Australia and its people",
+    "question": "Which Australian city is famous for its harbour?",
+    "options": [
+      "Brisbane",
+      "Sydney",
+      "Melbourne",
+      "Canberra"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sydney Harbour is one of the most iconic sites.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982630Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c656"
+    },
+    "category": "Australia and its people",
+    "question": "Where is the Great Ocean Road located?",
+    "options": [
+      "Queensland",
+      "Victoria",
+      "NSW",
+      "WA"
+    ],
+    "correctAnswer": 1,
+    "explanation": "It is in Victoria, along the southern coast.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982633Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c657"
+    },
+    "category": "Australia and its people",
+    "question": "What is an important part of Indigenous culture?",
+    "options": [
+      "Internet use",
+      "Modern media",
+      "Connection to land and nature",
+      "Trade agreements"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Connection to land is central to Indigenous identity.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982637Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c658"
+    },
+    "category": "Australia and its people",
+    "question": "Which island is located south of the Australian mainland?",
+    "options": [
+      "New Zealand",
+      "Tasmania",
+      "Bali",
+      "Christmas Island"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tasmania lies to the south of mainland Australia.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982640Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c659"
+    },
+    "category": "Australia and its people",
+    "question": "Which landmark is known for its coral reef system?",
+    "options": [
+      "Uluru",
+      "Sydney Harbour",
+      "Great Barrier Reef",
+      "Snowy Mountains"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Great Barrier Reef is the world\u2019s largest coral reef.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:57:32.982643Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c660"
+    },
+    "category": "Australian values",
+    "question": "What value encourages peaceful living in diverse communities?",
+    "options": [
+      "Conformity",
+      "Respect",
+      "Aggression",
+      "Silence"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Respect helps people of different backgrounds live peacefully.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336076Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c661"
+    },
+    "category": "Australian values",
+    "question": "How can new migrants demonstrate Australian values?",
+    "options": [
+      "By ignoring the law",
+      "By learning English and participating in community",
+      "By staying isolated",
+      "By avoiding voting"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Learning English and participating shows commitment to Australian values.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336085Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c662"
+    },
+    "category": "Australian values",
+    "question": "Which value promotes helping others during bushfires or floods?",
+    "options": [
+      "Mateship",
+      "Profit",
+      "Power",
+      "Class"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mateship encourages helping one another during crises.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336089Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c663"
+    },
+    "category": "Australian values",
+    "question": "Why is treating others equally a core value?",
+    "options": [
+      "To limit diversity",
+      "To promote power",
+      "To uphold fairness and justice",
+      "To silence opinions"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Equality promotes fairness and justice.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336092Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c664"
+    },
+    "category": "Australian values",
+    "question": "What helps migrants feel welcomed in Australia?",
+    "options": [
+      "Exclusion",
+      "Intolerance",
+      "Community support",
+      "Legal threats"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Community support and inclusion foster belonging.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336096Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c665"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Who leads a local council?",
+    "options": [
+      "Chief Judge",
+      "Mayor or Shire President",
+      "Premier",
+      "Governor"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Local councils are led by a mayor or shire president.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336099Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c666"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is a \u2018Bill\u2019 in Parliament?",
+    "options": [
+      "Final law",
+      "Discussion topic",
+      "Proposed law",
+      "Judgment"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A bill is a proposed law before it is passed.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336104Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c667"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Why are laws debated in Parliament?",
+    "options": [
+      "To confuse people",
+      "To slow progress",
+      "To ensure fairness and public interest",
+      "To delay elections"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Debates help improve the quality and fairness of laws.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336107Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c668"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the Australian head of state?",
+    "options": [
+      "The King",
+      "The Prime Minister",
+      "The Senate",
+      "The Governor"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Australia\u2019s head of state is the King, represented by the Governor-General.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336111Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c669"
+    },
+    "category": "Government and the law in Australia",
+    "question": "How are laws enforced?",
+    "options": [
+      "By judges",
+      "By citizens",
+      "By the executive branch and police",
+      "By media"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Laws are enforced by police and executive government.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336114Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c670"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Why are responsibilities like jury service important?",
+    "options": [
+      "To reward power",
+      "To reduce freedom",
+      "To support justice system",
+      "To limit rights"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Jury service helps maintain justice.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336118Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c671"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What does it mean to have freedom of political expression?",
+    "options": [
+      "Support only one party",
+      "Criticise others violently",
+      "Express opinions on politics lawfully",
+      "Silence opponents"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Citizens can express political opinions lawfully.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336121Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c672"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "How is government transparency supported?",
+    "options": [
+      "By military",
+      "By political secrecy",
+      "Through free media and public access",
+      "Through censorship"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Free press helps hold governments accountable.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336124Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c673"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is one result of respecting others\u2019 freedoms?",
+    "options": [
+      "Chaos",
+      "Peaceful coexistence",
+      "Protests",
+      "Censorship"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mutual respect promotes peace.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336127Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c674"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What protects people from discrimination?",
+    "options": [
+      "Local councils",
+      "Courts and anti-discrimination laws",
+      "Private companies",
+      "Police only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Anti-discrimination laws and courts uphold equality.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336130Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c675"
+    },
+    "category": "Australia and its people",
+    "question": "What is the Indigenous name for Ayers Rock?",
+    "options": [
+      "Kakadu",
+      "Uluru",
+      "Torres",
+      "Bunda"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Uluru is the traditional name for Ayers Rock.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336133Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c676"
+    },
+    "category": "Australia and its people",
+    "question": "Which city is known for its arts and cultural festivals?",
+    "options": [
+      "Darwin",
+      "Melbourne",
+      "Canberra",
+      "Brisbane"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Melbourne is famous for its cultural scene.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336136Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c677"
+    },
+    "category": "Australia and its people",
+    "question": "What is the name of Australia\u2019s national airline?",
+    "options": [
+      "Jetstar",
+      "Air Australia",
+      "Qantas",
+      "Kangaroo Air"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Qantas is the national airline.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336140Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c678"
+    },
+    "category": "Australia and its people",
+    "question": "Where is the Opera House located?",
+    "options": [
+      "Brisbane",
+      "Melbourne",
+      "Sydney",
+      "Perth"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Sydney Opera House is a world-famous landmark.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336143Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c679"
+    },
+    "category": "Australia and its people",
+    "question": "What natural event affects Australia\u2019s climate?",
+    "options": [
+      "Tsunamis",
+      "Hurricanes",
+      "Droughts",
+      "Earthquakes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Droughts are common natural events in Australia.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T09:59:03.336146Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c680"
+    },
+    "category": "Australian values",
+    "question": "What does inclusion mean in Australian society?",
+    "options": [
+      "Isolating minorities",
+      "Accepting and welcoming diversity",
+      "Enforcing uniform beliefs",
+      "Avoiding communication"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Inclusion means embracing all backgrounds and beliefs.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409663Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c681"
+    },
+    "category": "Australian values",
+    "question": "Why is fairness important in Australian workplaces?",
+    "options": [
+      "To reward status",
+      "To support employers only",
+      "To ensure equal opportunity",
+      "To avoid hiring"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Fairness supports equal opportunity in employment.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409674Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c682"
+    },
+    "category": "Australian values",
+    "question": "How do Australians support those in need?",
+    "options": [
+      "By raising taxes",
+      "By ignoring them",
+      "Through volunteering and donations",
+      "Through protests"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Helping others is part of Australian mateship.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409677Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c683"
+    },
+    "category": "Australian values",
+    "question": "What role does respect play in schools?",
+    "options": [
+      "Discourages learning",
+      "Encourages arguments",
+      "Promotes tolerance and discipline",
+      "Reduces competition"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Respect helps build a fair and tolerant environment.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409680Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c684"
+    },
+    "category": "Australian values",
+    "question": "What is one way to promote unity in a multicultural society?",
+    "options": [
+      "Promoting one culture",
+      "Segregation",
+      "Celebrating diversity",
+      "Enforcing language rules"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Celebrating diversity fosters unity and understanding.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409683Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c685"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Who leads the Australian Senate?",
+    "options": [
+      "Governor-General",
+      "Prime Minister",
+      "President of the Senate",
+      "Chief Minister"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The President of the Senate oversees debates and procedures.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409687Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c686"
+    },
+    "category": "Government and the law in Australia",
+    "question": "How are Senators chosen?",
+    "options": [
+      "Appointed by the King",
+      "By public election",
+      "Chosen by judges",
+      "Selected by Parliament"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Senators are elected by the people.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409692Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c687"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What does the High Court decide?",
+    "options": [
+      "Election winners",
+      "Military actions",
+      "Constitutional matters",
+      "Immigration processes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The High Court interprets the Constitution.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409696Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c688"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Who can change the Constitution?",
+    "options": [
+      "The High Court",
+      "The Prime Minister",
+      "The People through referendum",
+      "The Police"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Only the people can change the Constitution via referendum.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409699Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c689"
+    },
+    "category": "Government and the law in Australia",
+    "question": "How often are federal elections held in Australia?",
+    "options": [
+      "Every year",
+      "Every 3 years",
+      "Every 6 years",
+      "Every 10 years"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Federal elections are usually held every 3 years.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409703Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c690"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is one freedom protected by Australian law?",
+    "options": [
+      "Freedom to break laws",
+      "Freedom of religion",
+      "Freedom to harm others",
+      "Freedom to avoid jury duty"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Freedom of religion is a protected right.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409707Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c691"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is one responsibility that supports democracy?",
+    "options": [
+      "Starting a business",
+      "Obeying police without question",
+      "Voting in elections",
+      "Moving overseas"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Voting is a democratic responsibility.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409710Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c692"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What ensures public voices are heard?",
+    "options": [
+      "Military rule",
+      "Free and fair elections",
+      "Censorship",
+      "Media bans"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Elections allow citizens to voice their choices.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409713Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c693"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Why is peaceful protest allowed in Australia?",
+    "options": [
+      "To overthrow the government",
+      "To damage property",
+      "To express views within the law",
+      "To incite violence"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Peaceful protest is a lawful way to express views.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409717Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c694"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What right allows Australians to join unions or clubs?",
+    "options": [
+      "Freedom of religion",
+      "Freedom of movement",
+      "Freedom of association",
+      "Freedom of media"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Freedom of association lets Australians join lawful groups.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409720Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c695"
+    },
+    "category": "Australia and its people",
+    "question": "Which desert is located in central Australia?",
+    "options": [
+      "Sahara",
+      "Gibson Desert",
+      "Amazon",
+      "Gobi"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Gibson Desert is one of Australia's central deserts.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409724Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c696"
+    },
+    "category": "Australia and its people",
+    "question": "Which Australian city has the largest population?",
+    "options": [
+      "Brisbane",
+      "Melbourne",
+      "Sydney",
+      "Adelaide"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Sydney is the most populous city.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409728Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c697"
+    },
+    "category": "Australia and its people",
+    "question": "Which region is famous for wine production?",
+    "options": [
+      "Hunter Valley",
+      "Outback",
+      "Gold Coast",
+      "Northern Territory"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hunter Valley is a major wine-producing area.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409731Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c698"
+    },
+    "category": "Australia and its people",
+    "question": "Where is Parliament House located?",
+    "options": [
+      "Melbourne",
+      "Sydney",
+      "Canberra",
+      "Brisbane"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Parliament House is in Canberra.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409735Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c699"
+    },
+    "category": "Australia and its people",
+    "question": "Which body of water lies between Australia and New Zealand?",
+    "options": [
+      "Bass Strait",
+      "Tasman Sea",
+      "Indian Ocean",
+      "Coral Sea"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Tasman Sea separates Australia and New Zealand.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:02:43.409738Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c700"
+    },
+    "category": "Australian values",
+    "question": "What does mutual obligation mean in Australia?",
+    "options": [
+      "Shared responsibilities in society",
+      "Religious conformity",
+      "Law enforcement",
+      "Voting only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "It means everyone contributes and shares in community responsibilities.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562125Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c701"
+    },
+    "category": "Australian values",
+    "question": "Why is being open to different opinions valued?",
+    "options": [
+      "To encourage arguments",
+      "To reduce freedom",
+      "To support democracy and respect",
+      "To avoid laws"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Respect for different views supports democracy.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562138Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c702"
+    },
+    "category": "Australian values",
+    "question": "How is respect shown in everyday life in Australia?",
+    "options": [
+      "Avoiding others",
+      "Ignoring differences",
+      "Listening and considering others\u2019 views",
+      "Only speaking English"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Respect involves listening and treating people fairly.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562142Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c703"
+    },
+    "category": "Australian values",
+    "question": "Why is supporting others considered a national value?",
+    "options": [
+      "For fame",
+      "For political gain",
+      "To build stronger communities",
+      "For taxes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Helping each other fosters strong communities.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562147Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c704"
+    },
+    "category": "Australian values",
+    "question": "What is a key part of the Australian identity?",
+    "options": [
+      "Individualism",
+      "Class structure",
+      "Mateship and fairness",
+      "Isolationism"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australians value fairness and mateship.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562152Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c705"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the role of a Premier?",
+    "options": [
+      "Run a city",
+      "Lead a state government",
+      "Head the High Court",
+      "Manage Parliament"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Premier is the head of a state government.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562195Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c706"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Why does Australia have three levels of government?",
+    "options": [
+      "To avoid elections",
+      "To ensure checks and balances",
+      "To confuse voters",
+      "To increase taxes"
+    ],
+    "correctAnswer": 1,
+    "explanation": "This helps distribute responsibilities.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562202Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c707"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Why do local councils exist?",
+    "options": [
+      "Run elections",
+      "Administer federal taxes",
+      "Manage community services",
+      "Lead military operations"
+    ],
+    "correctAnswer": 2,
+    "explanation": "They handle local services and infrastructure.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562210Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c708"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What does the Constitution provide?",
+    "options": [
+      "Party policies",
+      "Judicial reviews",
+      "Framework for government",
+      "Tourism guidelines"
+    ],
+    "correctAnswer": 2,
+    "explanation": "It provides the structure of government.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562217Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c709"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is one way to uphold your democratic rights?",
+    "options": [
+      "Ignore laws",
+      "Vote in elections",
+      "Rely on others",
+      "Follow one party"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Voting helps maintain democracy.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562261Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c710"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "How is freedom balanced with safety in Australia?",
+    "options": [
+      "Using police only",
+      "Through laws and responsibilities",
+      "Through media bans",
+      "Via religion"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Freedoms are protected with legal limits.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562265Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c711"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Who can run for election?",
+    "options": [
+      "Any citizen meeting legal criteria",
+      "Only politicians",
+      "Police officers only",
+      "Foreign residents"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Any eligible citizen can stand for election.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562269Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c712"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Why is freedom of religion important?",
+    "options": [
+      "To enforce laws",
+      "To support one group",
+      "To ensure respect for diverse beliefs",
+      "To limit choices"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Religious freedom allows people to follow any faith.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562276Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c713"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What makes Australia a free society?",
+    "options": [
+      "Class rules",
+      "Wealth",
+      "Equal rights and freedoms",
+      "One-party control"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A free society ensures equal rights.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562283Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c714"
+    },
+    "category": "Australia and its people",
+    "question": "Where is the Daintree Rainforest located?",
+    "options": [
+      "Western Australia",
+      "Tasmania",
+      "Queensland",
+      "NSW"
+    ],
+    "correctAnswer": 2,
+    "explanation": "It is in northern Queensland.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562337Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c715"
+    },
+    "category": "Australia and its people",
+    "question": "Which Australian state is known for mining?",
+    "options": [
+      "South Australia",
+      "NSW",
+      "Western Australia",
+      "Victoria"
+    ],
+    "correctAnswer": 2,
+    "explanation": "WA is known for mining resources.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562342Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c716"
+    },
+    "category": "Australia and its people",
+    "question": "Which holiday celebrates Indigenous culture?",
+    "options": [
+      "Labour Day",
+      "Australia Day",
+      "NAIDOC Week",
+      "New Year"
+    ],
+    "correctAnswer": 2,
+    "explanation": "NAIDOC Week celebrates Indigenous heritage.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562346Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c717"
+    },
+    "category": "Australia and its people",
+    "question": "What is a bushfire?",
+    "options": [
+      "Flood",
+      "Fire in forest and dry lands",
+      "Dust storm",
+      "Rainstorm"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bushfires are common in Australia\u2019s hot, dry climate.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562351Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c718"
+    },
+    "category": "Australia and its people",
+    "question": "What is Australia\u2019s longest river?",
+    "options": [
+      "Murray River",
+      "Yarra River",
+      "Brisbane River",
+      "Snowy River"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Murray River is the longest.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:03:40.562356Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c719"
+    },
+    "category": "Australian values",
+    "question": "Why is honesty considered a core Australian value?",
+    "options": [
+      "To avoid punishment",
+      "To gain power",
+      "To build trust and fairness",
+      "To follow rules"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Honesty supports fairness and strong communities.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.364997Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c720"
+    },
+    "category": "Australian values",
+    "question": "What is considered a sign of respect in Australian culture?",
+    "options": [
+      "Ignoring others",
+      "Listening politely",
+      "Speaking over others",
+      "Arguing constantly"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Listening and respecting opinions is important.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c721"
+    },
+    "category": "Australian values",
+    "question": "How is fairness demonstrated in Australian schools?",
+    "options": [
+      "Favoritism",
+      "Equal treatment",
+      "Cultural exclusion",
+      "Private exams"
+    ],
+    "correctAnswer": 1,
+    "explanation": "All students are given equal opportunity.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365011Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c722"
+    },
+    "category": "Australian values",
+    "question": "What is a core belief in dealing with others?",
+    "options": [
+      "Aggression",
+      "Power",
+      "Mutual respect",
+      "Silence"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Respecting others is central to how Australians interact.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365014Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c723"
+    },
+    "category": "Australian values",
+    "question": "Why is helping strangers valued in Australia?",
+    "options": [
+      "For personal gain",
+      "For tradition",
+      "To strengthen community",
+      "To get rewards"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Helping builds stronger, more united communities.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365018Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c724"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the role of the Australian Electoral Commission?",
+    "options": [
+      "Count taxes",
+      "Monitor police",
+      "Conduct elections",
+      "Write laws"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The AEC runs federal elections and ensures fairness.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365022Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c725"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What does it mean that Australia is a constitutional monarchy?",
+    "options": [
+      "The King makes laws",
+      "There is no Prime Minister",
+      "The Constitution limits royal power",
+      "Military runs government"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The monarchy exists within constitutional limits.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365026Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c726"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the responsibility of a Member of Parliament?",
+    "options": [
+      "Enforce laws",
+      "Vote in elections",
+      "Represent citizens",
+      "Lead the army"
+    ],
+    "correctAnswer": 2,
+    "explanation": "MPs represent their electorates in lawmaking.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365030Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c727"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What role do committees play in Parliament?",
+    "options": [
+      "Serve food",
+      "Check details of legislation",
+      "Appoint judges",
+      "Silence opposition"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Committees examine proposed laws in detail.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365034Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c728"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is a budget in government?",
+    "options": [
+      "A donation",
+      "A list of promises",
+      "A financial plan",
+      "A police guideline"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The budget sets out how money will be raised and spent.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365038Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c729"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What happens if a law is found unconstitutional?",
+    "options": [
+      "It is enforced anyway",
+      "It is ignored",
+      "It is invalid",
+      "It is rewritten by police"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Unconstitutional laws are invalid.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365041Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c730"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Why are elections held regularly in Australia?",
+    "options": [
+      "To entertain",
+      "To confirm power",
+      "To ensure accountability",
+      "To raise money"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Regular elections keep governments accountable.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365046Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c731"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "How is the will of the people shown in a democracy?",
+    "options": [
+      "Through military",
+      "Through family tradition",
+      "Through voting",
+      "Through silence"
+    ],
+    "correctAnswer": 2,
+    "explanation": "People express their choices via votes.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365049Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c732"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What happens when democratic rights are not respected?",
+    "options": [
+      "Chaos",
+      "Legal action may be taken",
+      "More freedom",
+      "Censorship ends"
+    ],
+    "correctAnswer": 1,
+    "explanation": "There are legal ways to challenge rights violations.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365052Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c733"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Why is public debate encouraged?",
+    "options": [
+      "To confuse voters",
+      "To create division",
+      "To strengthen democracy",
+      "To promote violence"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Debate is healthy for democratic decision-making.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365150Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c734"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What does peaceful protest help achieve?",
+    "options": [
+      "Policy change",
+      "Violence",
+      "Censorship",
+      "Media attention only"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Protests can influence laws and government action.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365155Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c735"
+    },
+    "category": "Australia and its people",
+    "question": "What is one benefit of Australia's multicultural society?",
+    "options": [
+      "Less employment",
+      "Cultural enrichment",
+      "Fewer schools",
+      "Stronger borders"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Multiculturalism enriches Australian life.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365159Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c736"
+    },
+    "category": "Australia and its people",
+    "question": "Where is the Torres Strait located?",
+    "options": [
+      "South of Tasmania",
+      "Between Australia and Papua New Guinea",
+      "East of Melbourne",
+      "West of Perth"
+    ],
+    "correctAnswer": 1,
+    "explanation": "It lies between northern Australia and Papua New Guinea.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365162Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c737"
+    },
+    "category": "Australia and its people",
+    "question": "Why do many Australians live along the coast?",
+    "options": [
+      "For farming",
+      "For mining",
+      "For jobs and lifestyle",
+      "For politics"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Coastal living offers economic and lifestyle benefits.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365165Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c738"
+    },
+    "category": "Australia and its people",
+    "question": "Which state is famous for the Gold Coast?",
+    "options": [
+      "Victoria",
+      "NSW",
+      "Queensland",
+      "WA"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Queensland is home to the Gold Coast.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365169Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c739"
+    },
+    "category": "Australia and its people",
+    "question": "What is one reason for celebrating NAIDOC Week?",
+    "options": [
+      "To remember British explorers",
+      "To mark Independence",
+      "To honour Indigenous cultures",
+      "To end school term"
+    ],
+    "correctAnswer": 2,
+    "explanation": "NAIDOC celebrates Aboriginal and Torres Strait Islander peoples.",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2025-04-05T10:08:16.365172Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c4d"
+    },
+    "category": "Australian values",
+    "question": "Which Australian value emphasizes the importance of laws in maintaining a peaceful and orderly society?",
+    "options": [
+      "Freedom of speech",
+      "Commitment to the Rule of Law",
+      "Equality of all people under the law",
+      "Mutual respect and tolerance for others"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Australians recognise the importance of laws in maintaining a peaceful and orderly society under the Commitment to the Rule of Law [1].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c4e"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the legal document that sets out the basic rules for the government of the Commonwealth of Australia?",
+    "options": [
+      "The Australian Citizenship Act",
+      "The Commonwealth of Australia Constitution Act 1900",
+      "The Bill of Rights",
+      "The Federation Agreement"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Commonwealth of Australia Constitution Act 1900 (Australian Constitution) is the legal document that sets out the basic rules for the government of Australia [2].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c4f"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is a core Australian value that underpins the democratic system, allowing people to express their opinions?",
+    "options": [
+      "Freedom of association",
+      "Freedom of religion",
+      "Freedom of speech",
+      "Gender equality"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Freedom of speech is a core Australian value and underpins our democratic system, meaning people can say and write what they think [3].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c50"
+    },
+    "category": "Australia and its people",
+    "question": "Which group are the first inhabitants of Australia, with the oldest continuous cultures and traditions in the world?",
+    "options": [
+      "European settlers",
+      "Torres Strait Islander peoples only",
+      "Aboriginal peoples only",
+      "Aboriginal and Torres Strait Islander peoples"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Australia\u2019s first inhabitants are the Aboriginal and Torres Strait Islander peoples, who have the oldest continuous cultures and traditions in the world [4].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c51"
+    },
+    "category": "Australian values",
+    "question": "According to Australian values, is it acceptable to promote violence against a group of people due to their ethnicity?",
+    "options": [
+      "Yes, if there is a strong disagreement with their views.",
+      "Yes, in certain circumstances if national security is threatened.",
+      "No, it is against Australian values and law.",
+      "It depends on the specific cultural context."
+    ],
+    "correctAnswer": 2,
+    "explanation": "It is never acceptable to promote violence against another person or group of people (such as because of their culture, ethnicity, religion or background) because it is against Australian values and law [5].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c52"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Which body has the power to make and change laws in Australia?",
+    "options": [
+      "The High Court of Australia",
+      "The Prime Minister and Cabinet",
+      "The Parliament",
+      "The Governor-General"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Parliament has the power to make and change the laws in Australia [6].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c53"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Can people in Australia be forced to join a political party or other legal organisation?",
+    "options": [
+      "Yes, if it benefits the community.",
+      "Yes, during times of national emergency.",
+      "No, people cannot be forced to join.",
+      "It depends on the specific organisation's rules."
+    ],
+    "correctAnswer": 2,
+    "explanation": "People can also decide not to join, and cannot be forced into doing so [5, 7].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c54"
+    },
+    "category": "Australia and its people",
+    "question": "In what year did the separate Australian colonies unite to form the Commonwealth of Australia?",
+    "options": [
+      "1788",
+      "1851",
+      "1901",
+      "1967"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In 1901, the separate colonies were united into a federation of states called the Commonwealth of Australia [2, 8].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c55"
+    },
+    "category": "Australian values",
+    "question": "What does the Australian value of 'a fair go' primarily refer to?",
+    "options": [
+      "Everyone is entitled to the same outcome.",
+      "Everyone, regardless of background, should have equal opportunity to achieve success.",
+      "The government should provide extensive welfare benefits to all citizens.",
+      "Only those born in Australia are entitled to opportunities."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Australians value equal opportunity in our society; what is often called a ‘fair go’. This means that what someone achieves in life should be as a result of their talents, work and effort, rather than their wealth or background [9, 10].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c56"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the term for a vote by all voters on a proposed change to the Australian Constitution?",
+    "options": [
+      "Election",
+      "Referendum",
+      "Plebiscite",
+      "Poll"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Australian people can change the Australian Constitution by voting in a referendum [11]. A referendum is a vote by all voters on a proposed change to the Australian Constitution [12].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c57"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Does Australia have an official national religion?",
+    "options": [
+      "Yes, Christianity.",
+      "Yes, based on its Judaeo-Christian heritage.",
+      "No, Australia is a secular country with no official national religion.",
+      "Yes, a combination of all major religions represented in Australia."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australia has no official national religion. People in Australia are free to follow any religion they choose. They may also not choose to follow a religion [13, 14]. The government in Australia is secular, which means it operates separately from churches or other religious entities [13].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c58"
+    },
+    "category": "Australia and its people",
+    "question": "What is the significance of Australia Day, celebrated on 26 January each year?",
+    "options": [
+      "It commemorates the federation of Australia.",
+      "It marks the anniversary of the arrival of the First Fleet from Great Britain in 1788.",
+      "It celebrates the inclusion of Aboriginal and Torres Strait Islander peoples in the census.",
+      "It remembers the ANZAC landing at Gallipoli."
+    ],
+    "correctAnswer": 1,
+    "explanation": "On 26 January each year, we celebrate Australia Day. It is the anniversary of the arrival of the First Fleet from Great Britain in 1788 [15].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c59"
+    },
+    "category": "Australian values",
+    "question": "According to Australian values, what should be the basis for a person getting a job?",
+    "options": [
+      "Their family connections.",
+      "Their wealth and social status.",
+      "Their skills and experience.",
+      "Their place of birth."
+    ],
+    "correctAnswer": 2,
+    "explanation": "What someone achieves in life should be a result of their hard work and talents. This means a person should get a job based on their skills and experience, not because of their gender, wealth or ethnicity [16].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c5a"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the role of the Governor-General in the Australian system of government?",
+    "options": [
+      "To be the head of the government and make daily decisions.",
+      "To be the King's representative in Australia and perform ceremonial duties.",
+      "To be the leader of the Opposition party.",
+      "To interpret and apply the law as the head of the judicial branch."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The King of Australia appoints the Governor-General as his representative in Australia [17]. The Governor-General’s role includes performing ceremonial duties [18].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c5b"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "According to Australian law, if there is a conflict between an Australian law and a religious practice, which law prevails?",
+    "options": [
+      "Religious law.",
+      "Australian law prevails.",
+      "They are considered equal and must be negotiated.",
+      "It is decided on a case-by-case basis."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Where there is a conflict between an Australian law and a religious practice, Australian law prevails [13, 19].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c5c"
+    },
+    "category": "Australia and its people",
+    "question": "What is the Australian national language?",
+    "options": [
+      "English",
+      "Auslan (Australian Sign Language)",
+      "No official language",
+      "Aboriginal English"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Australia’s national language is English. It is part of our national identity [20, 21].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c5d"
+    },
+    "category": "Australian values",
+    "question": "What is expected of people living in Australia regarding the English language?",
+    "options": [
+      "They must become fluent in English within one year of arrival.",
+      "They should make an effort to learn English.",
+      "They are only required to learn English if they plan to become citizens.",
+      "They are not required to learn English as Australia is multicultural."
+    ],
+    "correctAnswer": 1,
+    "explanation": "In keeping with Australian values, migrants should learn and use English to help them participate in Australian society [20]. Applicants for Australian citizenship must undertake to make reasonable efforts to learn the English language, if it is not their native language [22].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c5e"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What are the three levels of government in Australia?",
+    "options": [
+      "Federal, state, and local.",
+      "Commonwealth, territory, and municipal.",
+      "National, regional, and city.",
+      "Parliamentary, executive, and judicial."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Commonwealth of Australia is a federation of states and territories [23]. The states and the Northern Territory are divided into local government areas [24]. This indicates the three levels are federal (Commonwealth), state/territory, and local.",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c5f"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Is it legal to organise a public gathering in Australia to protest against a government action?",
+    "options": [
+      "No, all protests are illegal.",
+      "Yes, as long as the protest is peaceful and obeys Australian laws.",
+      "Yes, but only with prior permission from the government.",
+      "No, only political parties can organise such gatherings."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Australians can gather with others to protest against a government action or an organisation. At all times, however, the laws of Australia must be obeyed. This means that such gatherings must be peaceful, and must not injure any person or damage property [14, 25, 26]. Tolerance of peaceful public protest is an essential part of democracy [26].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c60"
+    },
+    "category": "Australia and its people",
+    "question": "What is the Welcome to Country protocol?",
+    "options": [
+      "A formal apology given by the government to Indigenous Australians.",
+      "A traditional Indigenous ceremony welcoming visitors to their land.",
+      "A national celebration of multiculturalism.",
+      "The official opening of the Australian Parliament each year."
+    ],
+    "correctAnswer": 1,
+    "explanation": "A Welcome to Country is a cultural practice performed by an Aboriginal or Torres Strait Islander custodian of the local region, welcoming visitors to their traditional land [27, 28].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c61"
+    },
+    "category": "Australian values",
+    "question": "What does mutual respect and tolerance for others mean in the context of Australian values?",
+    "options": [
+      "Agreeing with everyone's opinions.",
+      "Ignoring differences in opinion to avoid conflict.",
+      "Listening to others and respecting their views, even when different from one's own.",
+      "Prioritizing one's own beliefs over others'."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australia values the principles of mutual respect and tolerance. This means listening to others and respecting their views and opinions, even when they are different from your own. People should be tolerant of each other where they find that they disagree [29]. Individuals must respect the freedom and dignity of others, and their opinions and choices [30].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c62"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the role of the High Court of Australia?",
+    "options": [
+      "To create new laws for the country.",
+      "To enforce the laws made by Parliament.",
+      "To have the ultimate power to apply and interpret the laws of Australia.",
+      "To advise the government on policy matters."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Constitution also established the High Court of Australia, which has the ultimate power to apply and interpret the laws of Australia [8, 11].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c63"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Does freedom of speech in Australia mean that people can say anything they want without any consequences?",
+    "options": [
+      "Yes, it is an absolute right.",
+      "Yes, but only in private settings.",
+      "No, people must still obey Australian laws when exercising freedom of speech.",
+      "No, only the media has complete freedom of speech."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Freedom of speech means people can say and write what they think, and discuss their ideas with others... so long as at all times they are still obeying Australian laws [3, 26]. Other people’s freedom of speech and freedom of expression must be respected, as long as such expression is lawful [5, 7].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c64"
+    },
+    "category": "Australia and its people",
+    "question": "What does the Commonwealth Star on the Australian National Flag represent?",
+    "options": [
+      "The Southern Cross constellation.",
+      "The union of Australia and the United Kingdom.",
+      "The six original colonies.",
+      "The six states and the territories of Australia."
+    ],
+    "correctAnswer": 3,
+    "explanation": "The Commonwealth Star is under the Union Jack. This star has seven points, each point representing one of the six states and one point for the territories [31].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c65"
+    },
+    "category": "Australian values",
+    "question": "What is the Australian term that reflects helping each other in times of need and a strong sense of community?",
+    "options": [
+      "Individualism",
+      "Mateship",
+      "Competition",
+      "Formalism"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Australians value ‘mateship’. We help each other in times of need [32].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c66"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is ‘Royal Assent’ in the Australian legislative process?",
+    "options": [
+      "A public debate in Parliament about a new law.",
+      "The Prime Minister's approval of a Bill.",
+      "The Governor-General signing a Bill to become law.",
+      "A vote by the people in a referendum on a new law."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Governor-General signs a Bill so that it becomes law. This is called ‘Royal Assent’ [18, 33].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c67"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What does freedom of association in Australia entail?",
+    "options": [
+      "The right to protest only with government permission.",
+      "The right to form and join associations to pursue common goals.",
+      "The obligation to join community groups.",
+      "The restriction of forming groups that oppose the government."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Freedom of association is the right to form and join associations to pursue common goals [5, 7].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c68"
+    },
+    "category": "Australia and its people",
+    "question": "Which of the following is Australia's national flower?",
+    "options": [
+      "Eucalyptus blossom",
+      "Kangaroo Paw",
+      "Golden Wattle",
+      "Waratah"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australia’s national flower is the golden wattle [34, 35].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c69"
+    },
+    "category": "Australian values",
+    "question": "According to Australian values, is discrimination based on a person's sexual orientation acceptable?",
+    "options": [
+      "Yes, if it aligns with traditional beliefs.",
+      "Yes, in certain private organisations.",
+      "No, Australian society values the equal rights of all people regardless of sexual orientation.",
+      "It is a matter of individual choice."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australian society values the equal rights of all people, regardless of gender, sexual orientation, age, disability, religion, race, or national or ethnic origin [36]. There are a number of laws in Australia that protect a person from being treated differently from others [9, 36].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c6a"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the name given to the leader of the Australian Government?",
+    "options": [
+      "President",
+      "Governor-General",
+      "Prime Minister",
+      "Chief Minister"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In the Australian system, the leader of the Australian Government is the Prime Minister [37]. The Australian Government is generally formed by the party or coalition of parties with the majority of members in the Houses of Representatives. The leader of this party becomes the leader of the Australian Government: the Prime Minister [38].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c6b"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is the principle of the Rule of Law in Australia?",
+    "options": [
+      "Only government officials are subject to the law.",
+      "Religious rules take precedence over civil law.",
+      "All Australians are equal under the law, and no one is above the law.",
+      "Laws only apply to non-citizens."
+    ],
+    "correctAnswer": 2,
+    "explanation": "All Australians are equal under the law. The Rule of Law means that no person, group or religious rule is above the law. Everyone, including people who hold positions of power in the Australian community, must obey Australia’s laws [1, 39].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c6c"
+    },
+    "category": "Australia and its people",
+    "question": "What is the name of the group of ships that brought the first European settlers to Australia?",
+    "options": [
+      "The Southern Fleet",
+      "The British Armada",
+      "The First Fleet",
+      "The Convoy of Hope"
+    ],
+    "correctAnswer": 2,
+    "explanation": "European settlement started when the first 11 convict ships, which became known as the ‘First Fleet’, arrived from Great Britain on 26 January 1788 [40, 41].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c6d"
+    },
+    "category": "Australian values",
+    "question": "Is it legal in Australia for a 20-year-old to have sexual relations with a 15-year-old?",
+    "options": [
+      "Yes, if both individuals consent.",
+      "Yes, if it is within a marital relationship.",
+      "No, it is against the law in all Australian states and territories.",
+      "It depends on the specific state or territory laws."
+    ],
+    "correctAnswer": 2,
+    "explanation": "In Australia, there are very strict laws concerning the age of sexual consent, which is 16 or 17 depending on which state or territory you reside in. For example, in Australia, a 20 year old man cannot have sexual relations with a 15 year old girl, because that is against the law in all Australian states and territories [30].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c6e"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What are the two houses of the Australian Parliament called?",
+    "options": [
+      "The Senate and the House of Commons.",
+      "The Parliament House and the Government House.",
+      "The House of Representatives and the Senate.",
+      "The Upper House and the Lower House."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Australian Government is made up of members of the Australian Parliament, which has two Houses: the House of Representatives and the Senate [42-44].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c6f"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What does the term 'secular' mean in the context of Australian government?",
+    "options": [
+      "The government is based on religious principles.",
+      "The government operates separately from religious entities.",
+      "The government supports one official religion.",
+      "The government promotes religious tolerance but is still guided by a dominant faith."
+    ],
+    "correctAnswer": 1,
+    "explanation": "The government in Australia is secular, which means it operates separately from churches or other religious entities [13, 45].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c70"
+    },
+    "category": "Australia and its people",
+    "question": "What is the significance of the Southern Cross on the Australian National Flag?",
+    "options": [
+      "It represents the six states of Australia.",
+      "It symbolises Australia's British heritage.",
+      "It is a group of stars visible in the southern sky.",
+      "It represents the federation of Australia in 1901."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Southern Cross, on the right, is a group of stars that can be seen in the southern sky [31].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c71"
+    },
+    "category": "Australian values",
+    "question": "In Australia, is physical violence against a spouse or partner acceptable?",
+    "options": [
+      "Yes, in certain cultural contexts.",
+      "Yes, as a form of discipline.",
+      "No, it is never acceptable and is a criminal offence.",
+      "It is a private matter and not under the jurisdiction of the law."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Physical violence against a spouse or partner is never acceptable and it is a criminal offence in Australia [10, 46]. Domestic and family violence is not accepted and is against the law [46, 47].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c72"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the main role of the Australian Electoral Commission (AEC)?",
+    "options": [
+      "To advise the government on electoral matters.",
+      "To prosecute individuals who break electoral laws.",
+      "To conduct federal elections and referendums and maintain the Commonwealth electoral roll.",
+      "To represent the government in international electoral observer missions."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Australian Electoral Commission (AEC) is a Commonwealth agency responsible for conducting federal elections and referendums, and maintaining the Commonwealth electoral roll [48].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c73"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Can Australians choose not to follow any religion?",
+    "options": [
+      "No, everyone must adhere to a recognised religion.",
+      "No, as Australia has a Judaeo-Christian heritage.",
+      "Yes, they may also not choose to follow a religion.",
+      "Yes, but only if they formally renounce any previous religious affiliations."
+    ],
+    "correctAnswer": 2,
+    "explanation": "People in Australia are free to follow any religion they choose. They may also not choose to follow a religion [13, 14].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c74"
+    },
+    "category": "Australia and its people",
+    "question": "What are Australia’s national colours?",
+    "options": [
+      "Red, white, and blue.",
+      "Black, red, and yellow.",
+      "Green and gold.",
+      "Blue, white, black, and green."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australia’s national colours are green and gold—the colours of the golden wattle [35].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c75"
+    },
+    "category": "Australian values",
+    "question": "What should Australians do if they suspect a friend or neighbour is planning to commit a serious crime?",
+    "options": [
+      "Ignore it as it is a private matter.",
+      "Confront the person directly.",
+      "Report this to Australian government authorities as soon as possible.",
+      "Discuss it with other neighbours first."
+    ],
+    "correctAnswer": 2,
+    "explanation": "If people in Australia suspect their friend or neighbour may be planning to commit a serious crime, they should report this to Australian government authorities as soon as possible. In this way, we can help to protect the safety of our community [22].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c76"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the role of a jury in the Australian court system?",
+    "options": [
+      "To make laws.",
+      "To enforce laws.",
+      "To decide if a person is guilty or not guilty in some court cases.",
+      "To determine the penalty for a crime."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A jury is a group of ordinary Australian men and women who listen to the evidence in a court case and decide if a person is guilty or not guilty [49, 50].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c77"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Is voting compulsory for Australian citizens aged 18 years or over in federal elections?",
+    "options": [
+      "No, voting is voluntary at the federal level.",
+      "Yes, voting is compulsory in federal and state or territory elections.",
+      "It depends on the individual's circumstances.",
+      "Only first-time voters are required to vote."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Voting is compulsory in federal and state or territory elections [26, 51, 52].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c78"
+    },
+    "category": "Australia and its people",
+    "question": "What is Anzac Day commemorated for?",
+    "options": [
+      "The arrival of the First Fleet.",
+      "The federation of Australia.",
+      "The landing of the Australian and New Zealand Army Corps at Gallipoli during World War I.",
+      "The end of World War II."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Anzac Day is commemorated on 25 April each year. Anzac Day is named after the Australian and New Zealand Army Corps, which landed at Gallipoli in Türkiye during World War I on 25 April 1915 [53].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c79"
+    },
+    "category": "Australian values",
+    "question": "According to Australian values, how should disagreements be resolved?",
+    "options": [
+      "Through violence and intimidation.",
+      "Through peaceful disagreement and tolerance.",
+      "By ignoring the differing opinions.",
+      "By imposing one's own views on others."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Australians believe in peaceful disagreement and above all the right to be safe and free from violence and intimidation [30]. Australia values the principles of mutual respect and tolerance. This means listening to others and respecting their views and opinions, even when they are different from your own. People should be tolerant of each other where they find that they disagree [29].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c7a"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Who is Australia’s Head of State?",
+    "options": [
+      "The Prime Minister",
+      "The Governor-General",
+      "The King of Australia",
+      "The Chief Justice of the High Court"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australia’s Head of State is the King of Australia, His Majesty King Charles III [17, 54].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c7b"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is the right to form and join associations to pursue common goals called in Australia?",
+    "options": [
+      "Freedom of assembly",
+      "Freedom of expression",
+      "Freedom of association",
+      "Freedom of movement"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Freedom of association is the right to form and join associations to pursue common goals [7].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c7c"
+    },
+    "category": "Australia and its people",
+    "question": "What is the official symbol of the Commonwealth of Australia that represents national unity?",
+    "options": [
+      "The Australian National Flag",
+      "The Commonwealth Coat of Arms",
+      "The Golden Wattle",
+      "'Advance Australia Fair'"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Commonwealth Coat of Arms is the official symbol of the Commonwealth of Australia. It represents our national unity [34].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c7d"
+    },
+    "category": "Australian values",
+    "question": "What is the expected behaviour of Australians towards lawful requests from the police?",
+    "options": [
+      "They have the right to ignore police requests.",
+      "They should obey a lawful request from the police.",
+      "They should question the authority of the police in all situations.",
+      "They are only required to cooperate if they believe a crime has been committed."
+    ],
+    "correctAnswer": 1,
+    "explanation": "In Australia, the lawful actions of the police should be supported. You should obey a lawful request from the police, because all Australians commit to following the law [29].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c7e"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the name of the leader of a state government in Australia?",
+    "options": [
+      "Mayor",
+      "Governor",
+      "Premier",
+      "Chief Minister"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The leader of a state government is the Premier [55, 56].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c7f"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is a fundamental aspect of Australia’s parliamentary democracy?",
+    "options": [
+      "The power of the government comes from a hereditary ruler.",
+      "The military controls the government.",
+      "Australian citizens vote for people to represent them in parliament.",
+      "Only certain social classes are allowed to participate in government."
+    ],
+    "correctAnswer": 2,
+    "explanation": "As part of this system, the power of the government comes from the Australian people because Australian citizens vote for people to represent them in parliament [57, 58].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c80"
+    },
+    "category": "Australia and its people",
+    "question": "According to Aboriginal legend, what created the colours of the opal, Australia's national gemstone?",
+    "options": [
+      "The sun rising over the desert.",
+      "A conflict between ancestral beings.",
+      "A rainbow touching the earth.",
+      "The tears of the Dreamtime spirits."
+    ],
+    "correctAnswer": 2,
+    "explanation": "According to Aboriginal legend, a rainbow touched the earth and created the colours of the opal [35].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c81"
+    },
+    "category": "Australian values",
+    "question": "What is the Australian attitude towards racism?",
+    "options": [
+      "It is accepted as a part of cultural diversity.",
+      "It is tolerated in private settings but not in public.",
+      "It has no place in Australia.",
+      "It is a matter of individual opinion."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Racism has no place in Australia. This includes creating or sharing racially offensive material on the internet or other publications and making racially abusive comments in a public place or at a sporting event [29]. Incidents of racism can be reported to the Australian Human Rights Commission [59].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c82"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the role of the Australian Federal Police (AFP)?",
+    "options": [
+      "To manage state and territory police forces.",
+      "To only deal with minor local crimes.",
+      "To investigate crimes against federal laws, such as drug trafficking and national security threats.",
+      "To provide security for the Prime Minister and Governor-General only."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Australia also has a national police force called the Australian Federal Police (AFP). The AFP investigates crimes against federal laws, for example, drug trafficking, crimes against national security and crimes against the environment. The AFP is also responsible for general police work in the Australian Capital Territory [60].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c83"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Is there gender equality in Australia according to the source?",
+    "options": [
+      "No, men have more rights than women.",
+      "No, women have more rights than men.",
+      "Yes, men and women have equal rights in Australia.",
+      "Gender equality is still a goal but not yet achieved."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Men and women have equal rights in Australia. It is against the law to discriminate against a person because of their gender [9, 61].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c84"
+    },
+    "category": "Australia and its people",
+    "question": "What is the Australian national anthem?",
+    "options": [
+      "God Save the Queen",
+      "Waltzing Matilda",
+      "Advance Australia Fair",
+      "Kookaburra Sits in the Old Gum Tree"
+    ],
+    "correctAnswer": 2,
+    "explanation": "‘Advance Australia Fair’ is Australia’s national anthem. It is sung on occasions of national importance, including at Australian citizenship ceremonies and major sporting events [62, 63].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c85"
+    },
+    "category": "Australian values",
+    "question": "What does 'making a contribution' to the Australian community involve?",
+    "options": [
+      "Only participating in political activities.",
+      "Actively participating in society and fulfilling responsibilities as a citizen.",
+      "Solely focusing on personal financial success.",
+      "Only volunteering for government-run organisations."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Citizenship gives you the opportunity to fully participate in our nation’s life and community. It means that you are ready to fulfil your responsibilities as an Australian citizen. Australians expect everyone living in Australia to participate in our society and make a contribution to our community [32].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c86"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the term for an elected representative of the people in the Australian Parliament?",
+    "options": [
+      "Governor",
+      "Senator",
+      "Member of Parliament (MP)",
+      "Councillor"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Member of Parliament (MP) An elected representative of the people in the Australian Parliament or a state parliament [55].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c87"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What is expected of individuals in Australia regarding other people's freedom of speech?",
+    "options": [
+      "To agree with everything everyone says.",
+      "To remain silent when others express their views.",
+      "To respect other people’s freedom of speech and freedom of expression, as long as such expression is lawful.",
+      "To challenge and interrupt any speech they disagree with."
+    ],
+    "correctAnswer": 2,
+    "explanation": "We must also respect other people’s freedom of speech and freedom of expression [7]. Other people’s freedom of speech and freedom of expression must be respected, as long as such expression is lawful [5].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c88"
+    },
+    "category": "Australia and its people",
+    "question": "What happened in Australia in 1967 that significantly impacted Aboriginal and Torres Strait Islander peoples?",
+    "options": [
+      "The First Fleet arrived in Australia.",
+      "The colonies federated to form the Commonwealth of Australia.",
+      "A Referendum resulted in them being included in official estimates of the Australian population.",
+      "They were granted the right to vote in all elections."
+    ],
+    "correctAnswer": 2,
+    "explanation": "In 1901, Australia’s population was about four million. This number did not include Aboriginal and Torres Strait Islander peoples, as it was not until after a Referendum in 1967 that they were included in official estimates of the Australian population [8, 11].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c89"
+    },
+    "category": "Australian values",
+    "question": "What is the Australian attitude towards those in need within the community?",
+    "options": [
+      "Individuals are solely responsible for their own well-being.",
+      "There is a value of 'mateship' where people help each other in times of need.",
+      "The government provides all necessary support, and individual help is not required.",
+      "Helping others is only expected of religious organisations."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Australians value ‘mateship’. We help each other in times of need [32].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c8a"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the term for the power to make laws in Australia?",
+    "options": [
+      "Executive power",
+      "Judicial power",
+      "Legislative power",
+      "Reserve power"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Legislative power is the power to make laws. Parliament has the power to make and change the laws in Australia [6, 64].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c8b"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Can people in Australia be penalised for not following a religious law?",
+    "options": [
+      "Yes, if the religious law is widely accepted in the community.",
+      "Yes, if they belong to that particular religion.",
+      "No, religious laws have no legal status in Australia.",
+      "Yes, depending on the severity of the religious transgression."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Religious laws have no legal status in Australia. Australian law must be followed by everyone in Australia, including where it is different from religious laws [19].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67e08e9ffc9607a6e6992c8c"
+    },
+    "category": "Australia and its people",
+    "question": "What are the green stripes on the Torres Strait Islander Flag said to represent?",
+    "options": [
+      "The sea.",
+      "Peace.",
+      "The land.",
+      "The people."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The green stripes represent the land [65].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-30T00:00:00.000Z"
+    }
+  },
+{
+    "_id": {
+      "$oid": "sampleid1"
+    },
+    "category": "Australian values",
+    "question": "What is a fundamental Australian value that requires everyone to follow the law?",
+    "options": [
+      "Freedom of religion",
+      "Equality of opportunity",
+      "Commitment to the Rule of Law",
+      "Mutual respect and tolerance"
+    ],
+    "correctAnswer": 2,
+    "explanation": "**Commitment to the Rule of Law** means all Australians are protected by laws and legal systems and must obey the law [1, 2].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid2"
+    },
+    "category": "Australian values",
+    "question": "According to Australian values, is it acceptable to promote violence against a group of people due to their ethnicity?",
+    "options": [
+      "Yes, if they hold different views",
+      "Yes, in certain circumstances",
+      "No, it is against Australian values and law",
+      "It depends on the context"
+    ],
+    "correctAnswer": 2,
+    "explanation": "It is never acceptable to promote violence against another person or group because of their ethnicity, as it is against **Australian values and law** [3].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid3"
+    },
+    "category": "Australian values",
+    "question": "What does the Australian value of 'a fair go' primarily refer to?",
+    "options": [
+      "Government providing equal financial support to all citizens",
+      "Everyone having the same legal rights and equal opportunity to achieve success based on their talents and effort",
+      "People being entitled to the same outcomes in life regardless of their effort",
+      "Preferential treatment for certain groups in society"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'A fair go' means that **everyone, regardless of their background, is given an equal opportunity to achieve success in life** based on their hard work and talents [4, 5].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid4"
+    },
+    "category": "Australian values",
+    "question": "What is expected of people living in Australia regarding the English language?",
+    "options": [
+      "They must speak English fluently from the moment they arrive",
+      "They should make an effort to learn English as the national language",
+      "They are not required to learn English if they speak another language",
+      "Only Australian citizens are expected to learn English"
+    ],
+    "correctAnswer": 1,
+    "explanation": "**Australian society values the English language as the national language**, and people living in Australia should make an effort to learn it [6].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid5"
+    },
+    "category": "Australian values",
+    "question": "What does 'mateship' signify as an Australian value?",
+    "options": [
+      "Strong competition between individuals",
+      "Helping each other in times of need and community spirit",
+      "Strict adherence to formal social hierarchies",
+      "Emphasis on individual self-reliance without community support"
+    ],
+    "correctAnswer": 1,
+    "explanation": "**Mateship** is an Australian value that involves helping each other in times of need [7].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid6"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the name given to a proposal for a new law or a change to an existing law introduced in the Australian Parliament?",
+    "options": [
+      "Act",
+      "Statute",
+      "Bill",
+      "Regulation"
+    ],
+    "correctAnswer": 2,
+    "explanation": "If a member of the Australian Parliament proposes to introduce a new law or change an existing one, this proposal is called a '**Bill**' [8].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid7"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Which body has the power to make and change laws in Australia?",
+    "options": [
+      "The High Court of Australia",
+      "The Prime Minister and Cabinet",
+      "The Parliament",
+      "The Governor-General"
+    ],
+    "correctAnswer": 2,
+    "explanation": "**Parliament** has the power to make and change the laws in Australia [9].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid8"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the role of the High Court of Australia?",
+    "options": [
+      "To pass new legislation",
+      "To enforce the laws made by Parliament",
+      "To interpret and apply the laws of Australia",
+      "To oversee the executive branch of government"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The **High Court of Australia** has the ultimate power to apply and interpret the laws of Australia [10].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid9"
+    },
+    "category": "Government and the law in Australia",
+    "question": "Who is Australia's Head of State?",
+    "options": [
+      "The Prime Minister",
+      "The Governor-General",
+      "The King of Australia",
+      "The Chief Justice"
+    ],
+    "correctAnswer": 2,
+    "explanation": "**Australia’s Head of State is the King of Australia, His Majesty King Charles III** [11].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid10"
+    },
+    "category": "Government and the law in Australia",
+    "question": "What is the significance of the 'Commonwealth of Australia Constitution Act 1900'?",
+    "options": [
+      "It declared Australia's independence from Britain.",
+      "It established the system of state governments.",
+      "It is the legal document that sets out the basic rules for the government of Australia.",
+      "It outlined the principles of multiculturalism in Australia."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The **Commonwealth of Australia Constitution Act 1900 (Australian Constitution) is the legal document that sets out the basic rules for the government of Australia** [12].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid11"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "In Australia’s parliamentary democracy, where does the power of the government originate?",
+    "options": [
+      "From the monarch",
+      "From the Constitution",
+      "From the Australian people through voting",
+      "From the High Court"
+    ],
+    "correctAnswer": 2,
+    "explanation": "As part of Australia's parliamentary democracy, **the power of the government comes from the Australian people because Australian citizens vote for people to represent them in parliament** [13].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid12"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What does the Rule of Law mean in the Australian context?",
+    "options": [
+      "Only government officials are subject to the law.",
+      "Religious laws take precedence over secular laws.",
+      "All Australians are equal under the law, and no one is above the law.",
+      "Laws are only applicable to certain groups within society."
+    ],
+    "correctAnswer": 2,
+    "explanation": "The **Rule of Law means that no person, group or religious rule is above the law. Everyone... must obey Australia’s laws** [14].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid13"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "Which of the following is considered a core Australian value that underpins the democratic system, allowing people to express their opinions and ideas?",
+    "options": [
+      "Freedom of association",
+      "Freedom of religion",
+      "Freedom of speech",
+      "Equality of opportunity"
+    ],
+    "correctAnswer": 2,
+    "explanation": "**Freedom of speech** is a core Australian value and underpins our democratic system, meaning people can say and write what they think [15].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid14"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "What does freedom of association entail in Australia?",
+    "options": [
+      "The right to be forced to join any organisation.",
+      "The right to form and join associations to pursue common goals.",
+      "The right to prevent others from forming groups.",
+      "The government's control over all social and political gatherings."
+    ],
+    "correctAnswer": 1,
+    "explanation": "**Freedom of association is the right to form and join associations to pursue common goals**, and people cannot be forced into doing so [16].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid15"
+    },
+    "category": "Australia\u2019s democratic beliefs, rights and liberties",
+    "question": "In Australia, are religious laws legally binding?",
+    "options": [
+      "Yes, if they are consistent with the majority religion.",
+      "Yes, they form the basis of Australian common law.",
+      "No, religious laws have no legal status in Australia.",
+      "Yes, they are enforceable in matters of personal faith."
+    ],
+    "correctAnswer": 2,
+    "explanation": "**Religious laws have no legal status in Australia. Australian law must be followed by everyone in Australia**, including where it is different from religious laws [17].",
+    "difficulty": "medium",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid16"
+    },
+    "category": "Australia and its people",
+    "question": "Who are the first inhabitants of Australia?",
+    "options": [
+      "European settlers",
+      "The First Fleet convicts",
+      "Aboriginal and Torres Strait Islander peoples",
+      "Migrants from Britain and Ireland"
+    ],
+    "correctAnswer": 2,
+    "explanation": "**Australia’s first inhabitants are the Aboriginal and Torres Strait Islander peoples**, who have the oldest continuous cultures and traditions in the world [18].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid17"
+    },
+    "category": "Australia and its people",
+    "question": "When did the first European settlement in Australia begin?",
+    "options": [
+      "1801",
+      "1776",
+      "1788",
+      "1901"
+    ],
+    "correctAnswer": 2,
+    "explanation": "**European settlement in Australia began in 1788** with the arrival of the First Fleet [19].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "sampleid18"
+    },
+    "category": "Australia and its people",
+    "question": "In what year did the separate Australian colonies unite to form the Commonwealth of Australia?",
+    "options": [
+      "1851",
+      "1901",
+      "1967",
+      "1788"
+    ],
+    "correctAnswer": 1,
+    "explanation": "In **1901**, the separate colonies were united into a federation of states called the Commonwealth of Australia [12, 20].",
+    "difficulty": "easy",
+    "createdAt": {
+      "$date": "2024-07-03T01:00:00.000Z"
+    }
+  }
+]

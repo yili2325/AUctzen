@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - AusCitizen Test</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body data-requires-auth="true">
+    <header class="header">
+        <nav class="container nav-menu">
+            <div class="logo">
+                <img src="/images/logo.png" alt="AusCitizen Logo" style="width: 50px; height: 50px; border-radius:50%">
+                AusCitizen Test
+            </div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/practice_main.html">Practice</a>
+                <a href="/#features">Features</a>
+                <a id="dashboard-item" href="/dashboard.html" class="btn btn-secondary active">Dashboard</a>
+                <a id="logout-item" href="#" class="btn btn-outline">Log Out</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="progress-overview">
+                <h1>Your Progress Dashboard</h1>
+                
+                <div class="stats-grid">
+                    <div class="stat-card dashboard-animate-delay-1">
+                        <div class="stat-value" id="tests-completed">0</div>
+                        <div class="stat-label">Tests Completed</div>
+                    </div>
+                    
+                    <div class="stat-card dashboard-animate-delay-1">
+                        <div class="stat-value" id="avg-score">0%</div>
+                        <div class="stat-label">Average Score</div>
+                    </div>
+                    
+                    <div class="stat-card dashboard-animate-delay-2">
+                        <div class="stat-value" id="questions-answered">0</div>
+                        <div class="stat-label">Questions Answered</div>
+                    </div>
+                    
+                    <div class="stat-card dashboard-animate-delay-2">
+                        <div class="stat-value" id="study-time">0h</div>
+                        <div class="stat-label">Total Study Time</div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="performance-chart dashboard-animate-delay-3">
+                <h2><i class="fas fa-chart-line"></i> Performance Over Time</h2>
+                <div class="chart-container">
+                    <canvas id="performance-chart"></canvas>
+                </div>
+            </section>
+            
+            <section class="category-performance">
+                <h2>Category Performance</h2>
+                <div class="category-list">
+                    <div class="category-item">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="category-title">Australia and its people</h3>
+                        </div>
+                        <div class="category-score">Score: 0/0</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3 class="category-title">Australia's democratic beliefs, rights and liberties</h3>
+                        </div>
+                        <div class="category-score">Score: 0/0</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <h3 class="category-title">Government and the law in Australia</h3>
+                        </div>
+                        <div class="category-score">Score: 0/0</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+
+                    <div class="category-item">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3 class="category-title">Australian values</h3>
+                        </div>
+                        <div class="category-score">Score: 0/0</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="recommendations dashboard-animate">
+                <h2><i class="fas fa-lightbulb"></i> Recommended Practice</h2>
+                <div class="recommendation-list" id="recommendation-list">
+                    <!-- Recommendations will be inserted here by JavaScript -->
+                </div>
+            </section>
+            
+            <section class="subscription-info dashboard-animate">
+                <div class="subscription-header">
+                    <h2><i class="fas fa-check-circle"></i> All Features Included</h2>
+                    <span class="subscription-badge" id="subscription-badge">Free</span>
+                </div>
+                
+                <div class="subscription-details">
+                    <div class="subscription-detail">
+                        <h3>Plan</h3>
+                        <p id="subscription-plan">Complete Access</p>
+                    </div>
+                    
+                    <div class="subscription-detail">
+                        <h3>Status</h3>
+                        <p id="subscription-status">Active</p>
+                    </div>
+                    
+                    <div class="subscription-detail">
+                        <h3>Registered</h3>
+                        <p id="registration-date">N/A</p>
+                    </div>
+                    
+                    <div class="subscription-detail">
+                        <h3>Price</h3>
+                        <p id="subscription-renewal">$0 - Always Free</p>
+                    </div>
+                </div>
+                
+                <div class="subscription-actions">
+                    <a href="/practice_main.html" class="btn btn-primary">Practice Now</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>AusCitizen</h3>
+                    <p>Your trusted partner for Australian Citizenship Test preparation</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/practice_main.html">Practice Test</a></li>
+                        <li><a href="/#features">Features</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: support@auscitizen.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AusCitizen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/auth.js"></script>
+    <script src="/js/dashboard.js"></script>
+    
+    <!-- Clear browser cache for dashboard.js -->
+    <script>
+        // Force reload of dashboard.js by adding a timestamp parameter to the URL
+        document.addEventListener('DOMContentLoaded', function() {
+            let currentScript = document.querySelector('script[src*="dashboard.js"]');
+            if (currentScript) {
+                let newScript = document.createElement('script');
+                newScript.src = '/js/dashboard.js?v=' + new Date().getTime();
+                currentScript.parentNode.replaceChild(newScript, currentScript);
+                console.log('Reloaded dashboard.js with cache busting');
+            }
+        });
+    </script>
+</body>
+</html> 

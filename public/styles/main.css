@@ -1,0 +1,2130 @@
+/* Global Styles */
+:root {
+  --primary-color: #2563eb;
+  --primary-dark: #1d4ed8;
+  --secondary-color: #64748b;
+  --accent-color: #f59e0b;
+  --background-light: #f8fafc;
+  --text-dark: #1e293b;
+  --text-light: #64748b;
+  --white: #ffffff;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: var(--background-light);
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header Styles */
+.header {
+  background-color: var(--white);
+  box-shadow: var(--shadow-sm);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  box-shadow: var(--shadow-md);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 4rem 0 2rem;
+  margin-top: 4rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.footer-section p {
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: var(--accent-color);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Copyright section */
+.footer-bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+}
+
+/* Responsive footer */
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Responsive Design Improvements */
+
+/* Media Queries for different screen sizes */
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    /* Header & Navigation */
+    .nav-menu {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.8rem;
+        align-items: center;
+    }
+    
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links .btn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    
+    /* Features & Categories */
+    .feature-grid, .category-grid, .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .category-card {
+        height: auto;
+    }
+    
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    /* Practice Page */
+    .category-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .category-tab {
+        margin-bottom: 0.5rem;
+        width: 45%;
+        text-align: center;
+    }
+    
+    .timer {
+        position: static;
+        margin: 1rem auto;
+        width: fit-content;
+    }
+    
+    .question-container {
+        padding: 0;
+    }
+    
+    .navigation-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .navigation-buttons button {
+        width: 100%;
+    }
+}
+
+/* Small devices (landscape phones, 576px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+    /* Header & Navigation */
+    .nav-menu {
+        padding: 1rem 0;
+    }
+    
+    .nav-links {
+        gap: 0.5rem;
+    }
+    
+    .nav-links .btn {
+        padding: 0.5rem 1rem;
+    }
+    
+    /* Grids */
+    .feature-grid, .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .pricing-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Practice Page */
+    .category-tab {
+        padding: 0.6rem 1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    /* Grids */
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .category-grid, .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large devices (desktops, 992px to 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* Maintain most desktop styles, just adjust spacing */
+    .container {
+        padding: 0 30px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1201px) {
+    .container {
+        padding: 0 40px;
+    }
+    
+    /* Slightly larger text for very large screens */
+    body {
+        font-size: 1.1rem;
+    }
+    
+    h1 {
+        font-size: 3.2rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Specific component responsive adjustments */
+
+/* Make buttons stack on small screens */
+@media (max-width: 576px) {
+    .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* Adjust pricing cards for better mobile display */
+@media (max-width: 768px) {
+    .pricing-card {
+        margin-bottom: 2rem;
+    }
+    
+    .pricing-header {
+        padding: 1.5rem 1rem;
+    }
+    
+    .feature-list {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Ensure consistent button alignment across all screen sizes */
+@media (max-width: 992px) {
+    .text-center.p-4 {
+        padding: 1.5rem 1rem;
+    }
+    
+    .practice-btn {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    padding: 8rem 0 6rem;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    z-index: -1;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--white);
+    opacity: 0.9;
+    margin-bottom: 2.5rem;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.stat-label {
+    color: var(--white);
+    font-size: 0.875rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-lg);
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover img {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+/* Feature Section Styles */
+.features {
+    padding: 1.5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+    width: 3rem;
+    height: 3rem;
+    background: var(--primary-color);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.feature-icon i {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.feature-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.feature-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.3s ease;
+}
+
+.feature-link:hover {
+    gap: 0.75rem;
+}
+
+/* Category Section Styles */
+.categories {
+    padding: 2rem 0;
+    background-color: var(--secondary-color);
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.category-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 420px;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.category-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16/9;
+}
+
+.category-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.category-content h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.category-content p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.practice-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+.practice-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Section Headers */
+section h2 {
+    text-align: center;
+    margin: 3rem 0 1rem;
+    color: var(--dark-color);
+}
+.Ready {
+    color: white;
+}
+
+/* Footer Grid */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section a:hover {
+    opacity: 1;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links i {
+    font-size: 1.5rem;
+}
+
+/* Add pricing section styles */
+.pricing-section {
+    padding: 4rem 0;
+    background-color: var(--light-color);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--accent-color);
+    transform: scale(1.02);
+    z-index: 2;
+}
+
+.popular-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-bottom-left-radius: 8px;
+}
+
+.pricing-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.pricing-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-header p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.feature-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.feature-list li i {
+    margin-right: 0.8rem;
+    color: var(--primary-color);
+}
+
+.feature-list li.disabled {
+    opacity: 0.6;
+}
+
+.feature-list li.disabled i {
+    color: #999;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p-4 {
+    padding: 1.5rem;
+}
+
+/* Responsive pricing grid */
+@media (min-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* CTA Section */
+.cta-section {
+  background: var(--primary-color);
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.cta-section h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-section .btn {
+  display: inline-block;
+  background: var(--accent-color);
+  color: var(--dark-color);
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.cta-section .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 4rem 0;
+    background-color: var(--light-color);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--primary-color);
+}
+
+.testimonial-content h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-location {
+    color: var(--dark-color);
+    opacity: 0.7;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-content p:last-child {
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+/* Add margin between sections */
+.section-gap {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Update the login/signup buttons in the nav to be elliptical */
+.nav-links .btn {
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px; /* This creates the elliptical shape */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 1;
+}
+
+.nav-links .btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.nav-links .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links .btn-primary {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Also remove underlines from specific pricing card buttons */
+.pricing-card .btn,
+.text-center .btn,
+.hero-buttons .btn,
+.cta-section .btn {
+  text-decoration: none;
+}
+
+/* Standardize button alignment */
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pricing-header {
+  flex-shrink: 0;
+}
+
+.feature-list {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem 1rem;
+}
+
+.text-center.p-4 {
+  margin-top: auto;
+  padding: 1.5rem;
+}
+
+/* Make all buttons the same size */
+.pricing-card .btn,
+.category-content .btn,
+.hero-buttons .btn {
+  display: inline-block;
+  min-width: 180px;
+  text-align: center;
+  padding: 0.8rem 1.5rem;
+  font-weight: 500;
+}
+
+/* Fix alignment in category cards */
+.category-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.practice-btn {
+  margin-top: auto;
+  align-self: center;
+}
+
+/* Fix button margin issues */
+.pricing-card .btn,
+.category-content .btn,
+.hero-buttons .btn,
+.cta-section .btn {
+  margin-bottom: 0;
+}
+
+/* Ensure consistent vertical spacing in pricing cards */
+.text-center.p-4 {
+  margin-top: auto;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+/* Fix feature list spacing */
+.feature-list {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Ensure category buttons are properly aligned */
+.category-content {
+  padding-bottom: 2rem;
+}
+
+.practice-btn {
+  margin-bottom: 0;
+}
+
+/* Additional responsive improvements for all pages */
+
+/* Common responsive elements across all pages */
+@media (max-width: 576px) {
+    /* Common text adjustments */
+    h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Common section padding */
+    section {
+        padding: 2rem 0;
+    }
+    
+    /* Common card adjustments */
+    .card {
+        padding: 1rem;
+    }
+    
+    /* Common button adjustments */
+    .btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Homepage specific responsive styles */
+@media (max-width: 768px) {
+    /* Hero section */
+    .hero {
+        text-align: center;
+        padding: 2rem 0;
+    }
+    
+    /* Features section */
+    .features {
+        padding: 2rem 0;
+    }
+    
+    .feature-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-card i {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Categories section */
+    .category-card {
+        flex-direction: column;
+    }
+    
+    .category-image {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    
+    /* CTA section */
+    .cta-section {
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Practice page specific responsive styles */
+@media (max-width: 768px) {
+    /* Category selector */
+    .category-selector {
+        padding: 1.5rem 0;
+    }
+    
+    .category-tabs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .category-tab {
+        width: 100%;
+        padding: 0.6rem 0.5rem;
+        font-size: 0.9rem;
+        text-align: center;
+        border-radius: 5px;
+    }
+    
+    /* Question container */
+    .question-container {
+        padding: 0.5rem;
+    }
+    
+    .question-text {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    
+    .options label {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Timer */
+    .timer {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        box-shadow: none;
+        background-color: #f8f9fa;
+        width: 100%;
+    }
+    
+    /* Navigation buttons */
+    .navigation-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .navigation-buttons button {
+        width: 100%;
+    }
+    
+    .submit-section {
+        margin-top: 1.5rem;
+    }
+    
+    .submit-section button {
+        width: 100%;
+    }
+}
+
+/* Results page specific responsive styles */
+@media (max-width: 768px) {
+    .result-container {
+        padding: 1rem;
+    }
+    
+    .result-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .score-circle {
+        margin: 1rem auto;
+    }
+    
+    .result-summary {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .summary-card {
+        width: 100%;
+    }
+    
+    .result-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .result-actions .btn {
+        width: 100%;
+    }
+}
+
+/* Dashboard page specific responsive styles */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 1rem;
+    }
+    
+    .dashboard-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-card {
+        padding: 1rem;
+    }
+    
+    .progress-section {
+        padding: 1rem;
+    }
+    
+    .progress-bar {
+        height: 15px;
+    }
+    
+    .recent-activity {
+        padding: 1rem;
+    }
+    
+    .activity-item {
+        padding: 0.8rem;
+    }
+}
+
+/* Tablet-specific adjustments */
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Common tablet adjustments */
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Homepage */
+    .hero {
+        padding: 3rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    /* Practice page */
+    .category-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .category-tab {
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Results page */
+    .result-summary {
+        flex-wrap: wrap;
+    }
+    
+    .summary-card {
+        flex: 1 0 45%;
+    }
+    
+    /* Pricing page */
+    .pricing-card {
+        max-width: none;
+    }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    body {
+        font-size: 1.1rem;
+    }
+    
+    .hero {
+        padding: 5rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+    
+    .feature-grid, .category-grid {
+        gap: 2.5rem;
+    }
+    
+    .pricing-grid {
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* Fix responsive layout issues */
+
+/* Grid layouts */
+.feature-grid, 
+.category-grid, 
+.pricing-grid, 
+.testimonials-grid,
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+/* Card layouts */
+.feature-card,
+.category-card,
+.pricing-card,
+.testimonial-card {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Hero section */
+.hero {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Button styles for mobile */
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 1rem;
+}
+
+/* Navigation for mobile */
+.nav-menu {
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.logo {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+}
+
+.nav-links a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+/* Category cards for mobile */
+.category-card {
+    flex-direction: column;
+}
+
+.category-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.category-content {
+    padding: 1rem;
+}
+
+/* Pricing cards for mobile */
+.pricing-card {
+    margin-bottom: 2rem;
+}
+
+.pricing-header {
+    padding: 1.5rem 1rem;
+}
+
+.feature-list {
+    padding: 1rem;
+}
+
+/* Tablet styles (576px and up) */
+@media (min-width: 576px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .btn {
+        display: inline-block;
+        width: auto;
+    }
+    
+    .hero-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .feature-grid,
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+    .nav-menu {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    
+    .logo {
+        margin-bottom: 0;
+        text-align: left;
+    }
+    
+    .nav-links {
+        flex-direction: row;
+        width: auto;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    
+    .nav-links a {
+        width: auto;
+        padding: 0;
+    }
+    
+    .category-card {
+        flex-direction: row;
+        height: 200px;
+    }
+    
+    .category-image {
+        width: 40%;
+        height: 100%;
+    }
+    
+    .category-content {
+        width: 60%;
+    }
+    
+    .pricing-grid,
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+}
+
+/* Fix specific components */
+
+/* Practice page fixes */
+.category-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.category-tab {
+    flex: 1 0 45%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .category-tab {
+        flex: 0 0 auto;
+    }
+}
+
+/* Timer position fix */
+.timer {
+    position: static;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .timer {
+        position: fixed;
+        top: 100px;
+        right: 20px;
+    }
+}
+
+/* Fix plan options */
+.plan-options {
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .plan-options {
+        flex-direction: row;
+    }
+}
+
+/* Remove the previous mobile menu styles */
+.mobile-menu-toggle {
+    display: none;
+}
+
+.auth-buttons {
+    display: none;
+}
+
+.page-links {
+    display: flex;
+}
+
+/* Simplified mobile navigation */
+@media (max-width: 767px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .nav-links a {
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    
+    /* Make buttons look better on mobile */
+    .nav-links .btn {
+        width: 80%;
+        max-width: 200px;
+        margin: 0.2rem 0;
+    }
+}
+
+/* Tablet and desktop navigation */
+@media (min-width: 768px) {
+    .nav-menu {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+    
+    .logo {
+        margin-bottom: 0;
+    }
+    
+    .nav-links {
+        flex-direction: row;
+        width: auto;
+        align-items: center;
+    }
+    
+    .nav-links a {
+        padding: 0;
+        margin-left: 1.5rem;
+    }
+    
+    .nav-links a:first-child {
+        margin-left: 0;
+    }
+    
+    .nav-links .btn {
+        width: auto;
+        margin-left: 0.5rem;
+    }
+}
+
+/* Improved responsive grid layouts */
+
+/* Category cards - 3 columns on desktop, 1 column on mobile */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Make category cards horizontal on all screen sizes for better readability */
+.category-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.category-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.category-content {
+    padding: 1.5rem;
+}
+
+.category-content h3 {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.category-content p {
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.practice-btn {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.practice-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Testimonials - 2 columns on desktop, 1 column on mobile */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive breakpoints */
+@media (min-width: 576px) {
+    /* Small tablets and up */
+    .category-card {
+        flex-direction: row;
+        height: 200px;
+    }
+    
+    .category-image {
+        width: 40%;
+        height: 100%;
+    }
+    
+    .category-content {
+        width: 60%;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Medium tablets and up */
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Return to vertical layout for category cards when in 2-column grid */
+    .category-card {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .category-image {
+        width: 100%;
+        height: 180px;
+    }
+    
+    .category-content {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Desktops and up */
+    .category-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Fix for practice buttons */
+.practice-btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .practice-btn {
+        width: auto;
+    }
+}
+
+/* Add hover effects to all cards */
+
+/* Category cards hover effect */
+.category-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Feature cards hover effect */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+/* Testimonial cards hover effect */
+.testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Pricing cards hover effect */
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+    z-index: 2;
+}
+
+/* Special hover effect for popular pricing card - zoom out instead of in */
+.pricing-card.popular {
+    transform: scale(1.05); /* Start slightly zoomed in */
+    z-index: 3;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card.popular:hover {
+    transform: scale(1) translateY(-8px); /* Scale back to normal size and lift up */
+    box-shadow: 0 15px 30px rgba(0, 51, 160, 0.2);
+}
+
+/* Add subtle hover effect to buttons */
+.btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add hover effect to practice buttons */
+.practice-btn {
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.practice-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Improve pricing section spacing */
+.pricing-section p.text-center {
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+}
+
+.pricing-section h2 {
+    margin-bottom: 1rem;
+}
+
+/* Adjust spacing for mobile */
+@media (max-width: 576px) {
+    .pricing-section p.text-center {
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .pricing-section h2 {
+        margin-bottom: 0.8rem;
+    }
+}
+
+/* Responsive adjustments for category grid */
+@media (max-width: 1200px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    
+    .category-card {
+        min-height: 380px;
+    }
+
+    .category-image {
+        height: 180px;
+    }
+
+    .category-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .category-content p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .categories {
+        padding: 1rem 0;
+    }
+
+    .category-card {
+        min-height: 350px;
+    }
+
+    .category-image {
+        height: 160px;
+    }
+
+    .category-content {
+        padding: 1rem;
+    }
+
+    .practice-btn {
+        padding: 0.8rem;
+    }
+}
+
+/* Dashboard Category Performance Styles */
+.category-performance {
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin: 2rem 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.category-performance h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.category-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.category-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.category-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.category-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 51, 160, 0.1);
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.category-title {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.category-score {
+    margin-top: 1rem;
+    color: #666;
+    font-size: 1rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Only switch to single column on very small screens */
+@media (max-width: 576px) {
+    .category-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .category-performance {
+        padding: 1rem;
+    }
+
+    .category-item {
+        padding: 1rem;
+    }
+
+    .category-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Animations */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.hero-image {
+    animation: float 6s ease-in-out infinite;
+} 

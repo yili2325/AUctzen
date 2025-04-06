@@ -1,0 +1,529 @@
+/* Auth styles for login and signup pages */
+
+.auth-container {
+    min-height: calc(100vh - 180px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+}
+
+.auth-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1100px;
+    overflow: hidden;
+    display: flex;
+}
+
+.auth-form-section {
+    flex: 1;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+.auth-image-section {
+    flex: 1;
+    background: url('https://images.unsplash.com/photo-1523428096881-5bd79d043006?w=800&h=1200&fit=crop') center/cover;
+    min-height: 480px;
+    position: relative;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .auth-image-section {
+        display: block;
+    }
+}
+
+.auth-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.auth-image-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.auth-header {
+    background: linear-gradient(135deg, #5d9cec 0%, #4a7dbd 40%, #3a6491 70%, var(--primary-color) 100%);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    width: 116%;
+    margin: 0 -2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.auth-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.auth-header p {
+    opacity: 0.85;
+    font-size: 1rem;
+}
+
+.auth-body {
+    padding: 2rem 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(74, 125, 189, 0.2);
+    outline: none;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input-group .form-control {
+    flex: 1;
+    padding-right: 2.5rem;
+}
+
+.input-icon {
+    position: absolute;
+    right: 1rem;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.input-icon:hover {
+    color: var(--primary-color);
+}
+
+.form-check {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-check-input {
+    margin-right: 0.5rem;
+}
+
+.form-submit {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 0.75rem;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.form-submit:hover {
+    background-color: #f0cb2f;
+    transform: translateY(-2px);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.auth-footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.auth-footer a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Signup specific styles */
+.name-row {
+    display: flex;
+    gap: 1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 576px) {
+    .name-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .auth-form-section {
+        padding: 0 1rem;
+    }
+}
+
+/* Password strength indicator */
+.password-strength {
+    margin-top: 10px;
+}
+
+.strength-meter {
+    height: 4px;
+    background-color: var(--light-gray);
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+.strength-meter-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.strength-meter-fill[data-strength="0"] {
+    width: 25%;
+    background-color: #f44336;
+}
+
+.strength-meter-fill[data-strength="1"] {
+    width: 50%;
+    background-color: #ff9800;
+}
+
+.strength-meter-fill[data-strength="2"] {
+    width: 75%;
+    background-color: #2196f3;
+}
+
+.strength-meter-fill[data-strength="3"] {
+    width: 100%;
+    background-color: #4caf50;
+}
+
+.strength-text {
+    font-size: 0.8rem;
+    color: var(--gray-color);
+}
+
+/* Error messages */
+.error-message {
+    color: var(--danger-color);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Success message */
+.success-message {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #2e7d32;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.success-message i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Plan Selection Styles */
+.plan-selection-container {
+    padding: 1.25rem 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #1a237e, #0d47a1);
+    color: white;
+    overflow-y: auto;
+}
+
+.plan-selection-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.plan-selection-container p {
+    text-align: center;
+    margin-bottom: 0.8rem;
+    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1rem;
+}
+
+.plan-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    flex: 1;
+}
+
+.plan-option {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.plan-option:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.plan-option.selected {
+    background-color: rgba(255, 255, 255, 0.35);
+    border-color: #90caf9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.plan-header h3 {
+    margin: 0 0 0.25rem;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.popular-tag {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff9800;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.plan-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0.1rem 0;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.plan-period {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    color: white;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.3rem;
+}
+
+.plan-features li {
+    margin-bottom: 0.2rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.plan-features li i {
+    color: #64b5f6;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.plan-selected-indicator {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: none;
+    color: #64b5f6;
+    margin-top: 0.1rem;
+}
+
+.plan-option.selected .plan-selected-indicator {
+    display: block;
+}
+
+/* Remove default selection of basic plan - we'll handle this in JavaScript */
+.plan-option[data-plan="basic"] {
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.plan-option[data-plan="basic"] .plan-selected-indicator {
+    display: none;
+}
+
+/* Plan selection highlight animation */
+@keyframes highlightPlanSelection {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+}
+
+.highlight-selection {
+    animation: highlightPlanSelection 1.5s ease-in-out;
+    border: 2px solid #007bff !important;
+    background-color: rgba(0, 123, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.plan-option {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.plan-option.selected {
+    border-color: #28a745;
+    background-color: rgba(40, 167, 69, 0.05);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.plan-selected-indicator {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #28a745;
+    font-weight: 500;
+}
+
+.plan-option.selected .plan-selected-indicator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.popular-tag {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: #ff9800;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+/* Make sure the error message is prominently displayed */
+.error-message {
+    color: #dc3545;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    background-color: rgba(220, 53, 69, 0.1);
+    display: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Add emphasis when displaying plan selection error */
+.error-message[style*="display: block"] {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Add this with the other keyframes animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Debug login button styles */
+.debug-login {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.debug-login-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.debug-login-button:hover {
+    background-color: #45a049;
+} 

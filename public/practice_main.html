@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice - AusCitizen Test</title>
+  <!-- Base styles first -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/results.css">
+  <link rel="stylesheet" href="/css/geminiCall.css">
+  <!-- Practice styles last to override others -->
+  <link rel="stylesheet" href="/css/practice.css">
+</head>
+<body data-requires-auth="true" style="padding-top: 80px;">
+  <header class="header">
+    <nav class="container nav-menu">
+      <div class="logo">
+        <img src="/images/logo.png" alt="AusCitizen Logo" style="width: 50px; height: 50px;">
+        AusCitizen Test
+      </div>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/practice_main.html" class="active">Practice</a>
+        <a href="/#features">Features</a>
+        <a id="login-item" href="/login.html" class="btn btn-secondary">Log In</a>
+        <a id="signup-item" href="/signup.html?direct=true" class="btn btn-primary">Sign Up</a>
+        <a id="dashboard-item" href="/dashboard.html" class="btn btn-secondary" style="display: none;">Dashboard</a>
+        <a id="logout-item" href="#" class="btn btn-outline" style="display: none;">Log Out</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="practice-section">
+      <div class="container">
+        <div class="practice-heading">
+          <h1>Practice Test</h1>
+        </div>
+        
+        <div class="category-section">
+          <div class="category-grid">
+            <div class="category-card active" data-category="all" onclick="showCategory('all')">
+              <div class="category-icon"><i class="fas fa-globe-asia"></i></div>
+              <h3>All Categories</h3>
+              <p>Practice with questions from all topics</p>
+            </div>
+            
+            <div class="category-card" data-category="australia-and-people" onclick="showCategory('australia-and-people')">
+              <div class="category-icon"><i class="fas fa-users"></i></div>
+              <h3>Australia and its People</h3>
+              <p>History, geography, and people</p>
+            </div>
+            
+            <div class="category-card" data-category="democratic-beliefs" onclick="showCategory('democratic-beliefs')">
+              <div class="category-icon"><i class="fas fa-balance-scale"></i></div>
+              <h3>Democratic Beliefs</h3>
+              <p>Rights, liberties, and responsibilities</p>
+            </div>
+            
+            <div class="category-card" data-category="government-law" onclick="showCategory('government-law')">
+              <div class="category-icon"><i class="fas fa-landmark"></i></div>
+              <h3>Government and Law</h3>
+              <p>Political system and legal rights</p>
+            </div>
+            
+            <div class="category-card" data-category="australian-values" onclick="showCategory('australian-values')">
+              <div class="category-icon"><i class="fas fa-heart"></i></div>
+              <h3>Australian Values</h3>
+              <p>Discover core Australian values</p>
+            </div>
+          </div>
+          
+          <div class="start-practice-container">
+            <button class="start-practice-btn" onclick="startPractice()">
+              <i class="fas fa-play-circle"></i> Start Practice
+            </button>
+          </div>
+        </div>
+        
+        <div id="practice-container" class="practice-container" style="display: none;">
+          <div id="loading-container" class="loading-container">
+            <div class="spinner"></div>
+            <p>Loading questions...</p>
+          </div>
+          
+          <div id="error-container" class="error-container" style="display: none;">
+            <div class="error-message">
+              <i class="fas fa-exclamation-circle"></i>
+              <h3>Error loading questions</h3>
+              <p id="error-text">Please try again later.</p>
+            </div>
+          </div>
+          
+          <div id="question-container" class="question-card" style="display: none;">
+            <div class="question-header">
+              <div class="category-tag">
+                <i class="fas fa-tag"></i>
+                <span>All Categories</span>
+              </div>
+              
+              <div class="question-progress">
+                <span><span id="current-question">1</span> / <span id="total-questions">20</span></span>
+                <div class="progress-bar">
+                  <div id="progress-fill" class="progress-fill" style="width: 5%;"></div>
+                </div>
+              </div>
+              
+              <div class="timer">
+                <i class="fas fa-clock"></i>
+                <span class="timer-display">45:00</span>
+              </div>
+            </div>
+            
+            <div class="question-content">
+              <h2 id="question-text">Loading question...</h2>
+              <div id="options-container" class="options-container">
+                <!-- Options will be inserted here by JavaScript -->
+              </div>
+            </div>
+            
+            <div class="question-footer">
+              <button id="next-btn" class="btn-next" style="display: none;">
+                Next Question <i class="fas fa-arrow-right"></i>
+              </button>
+              <button id="finish-btn" class="btn-finish" style="display: none;">
+                Finish Practice <i class="fas fa-check"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="chat-container">
+    <div class="chat-header">
+      <div class="chat-title">
+        <i class="fas fa-robot"></i> AI Study Assistant
+      </div>
+      <button id="chat-close" class="chat-close">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div id="chat-box">
+      <div class="message system">Ask AI to explain this question.</div>
+    </div>
+    <div id="chat-input-row">
+      <input
+        type="text"
+        id="chat-input"
+        placeholder="Ask a follow-up question..."
+      />
+      <button id="chat-send">Send</button>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>AusCitizen</h3>
+          <p>Your trusted partner for Australian Citizenship Test preparation</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/practice_main.html">Practice Test</a></li>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: support@auscitizen.com</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 AusCitizen. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="/js/auth.js"></script>
+  <script src="/js/local-questions.js"></script>
+  <script src="/js/practice.js"></script>
+  <script src="/js/geminiCall.js"></script>
+  
+  <script>
+    // Execute when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('DOM fully loaded, checking for URL parameters');
+      
+      // Check for category parameter in URL
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('category')) {
+        const categoryFromUrl = urlParams.get('category');
+        console.log('Found category in URL:', categoryFromUrl);
+        
+        // Try to find the corresponding category card
+        const categoryCard = document.querySelector(`.category-card[data-category="${categoryFromUrl}"]`);
+        
+        if (categoryCard) {
+          console.log('Found matching category card, activating it');
+          
+          // Remove active class from all cards first
+          document.querySelectorAll('.category-card').forEach(card => {
+            card.classList.remove('active');
+          });
+          
+          // Add active class to the selected card
+          categoryCard.classList.add('active');
+          
+          // Save to localStorage for consistency
+          localStorage.setItem('selectedCategory', categoryFromUrl);
+          
+          // Start practice immediately if we have a category in URL
+          if (typeof startPractice === 'function') {
+            console.log('Auto-starting practice with category:', categoryFromUrl);
+            setTimeout(() => {
+              startPractice();
+            }, 100); // Small delay to ensure everything is loaded
+          }
+        } else {
+          console.warn('Category card not found for:', categoryFromUrl);
+        }
+      }
+    });
+  </script>
+</body>
+</html> 

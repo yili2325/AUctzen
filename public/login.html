@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AusCitizen Test Prep</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-redirect-if-logged-in="true">
+    <header class="header">
+        <nav class="container nav-menu">
+            <div class="logo">
+                <img src="/images/logo.png" alt="AusCitizen Logo">
+                AusCitizen Test
+            </div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/practice.html">Practice</a>
+                <a href="/#features">Features</a>
+                <a id="login-item" href="/login.html" class="btn btn-secondary active">Log In</a>
+                <a id="signup-item" href="/signup.html" class="btn btn-primary">Sign Up</a>
+                <a id="dashboard-item" href="/dashboard.html" class="btn btn-secondary" style="display: none;">Dashboard</a>
+                <a id="logout-item" href="#" class="btn btn-outline" style="display: none;">Log Out</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-form-section">
+                    <div class="auth-header">
+                        <h1>Welcome Back</h1>
+                        <p>Log in to continue your citizenship test preparation</p>
+                    </div>
+                    <div class="auth-body">
+                        <form id="login-form">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <div class="input-group">
+                                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                                    <i class="fas fa-envelope input-icon"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password" class="form-label">Password</label>
+                                <div class="input-group">
+                                    <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+                                    <i class="fas fa-eye-slash input-icon toggle-password"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="form-check">
+                                <input type="checkbox" id="remember" class="form-check-input">
+                                <label for="remember">Remember me</label>
+                            </div>
+                            
+                            <button type="submit" class="form-submit">Log In</button>
+                            
+                            <!-- Add Simple Login Button -->
+                            <div class="debug-login">
+                                <button type="button" id="debug-login-btn" class="debug-login-button">Simple Login</button>
+                            </div>
+                        </form>
+                        
+                        <div class="auth-footer">
+                            Don't have an account? <a href="/signup.html?direct=true">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="auth-image-section">
+                    <div class="auth-image-overlay">
+                        <div class="auth-image-text">
+                            Your Journey to Australian Citizenship Starts Here
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>AusCitizen</h3>
+                    <p>Your trusted partner for Australian Citizenship Test preparation</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/practice.html">Practice Test</a></li>
+                        <li><a href="/#features">Features</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: support@auscitizen.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AusCitizen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/auth.js"></script>
+</body>
+</html> 

@@ -1,0 +1,139 @@
+/* Custom styles for the quiz page */
+
+.quiz-container {
+  animation: fadeIn 0.5s ease;
+}
+
+.option {
+  position: relative;
+  overflow: hidden;
+}
+
+.option::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0.1), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.option:hover::after {
+  transform: translateX(0);
+}
+
+.option.selected {
+  background: linear-gradient(to right, #bbdefb, #e3f2fd);
+  transform: translateX(5px);
+}
+
+.timer {
+  position: relative;
+  overflow: hidden;
+}
+
+.timer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0.1), transparent);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.2; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0.2; }
+}
+
+.category-button {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.category-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0.1), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.category-button:hover::before {
+  transform: translateX(0);
+}
+
+.submit-container {
+  position: relative;
+}
+
+.submit-container::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0,0,0,0.1), transparent);
+}
+
+#submit-test {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#submit-test::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0.1), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+#submit-test:hover::after {
+  transform: translateX(0);
+}
+
+#submit-test:disabled {
+  background-color: #b0bec5;
+  color: #78909c;
+}
+
+.navigation button {
+  position: relative;
+  overflow: hidden;
+}
+
+.navigation button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0.1), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.navigation button:hover::after {
+  transform: translateX(0);
+}
