@@ -36,7 +36,7 @@ app.use((req, res, next) => {
 });
 
 // Define Routes - these must come BEFORE the static file middleware
-app.use('/api/auth', require('.server/routes/auth'));
+app.use('/api/auth', require('./server/routes/auth'));
 app.use('/api/users', require('./server/routes/users'));
 app.use('/api/questions', require('./server/routes/questions'));
 app.use('/api/practice', require('./server/routes/practice'));
