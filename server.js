@@ -36,12 +36,11 @@ app.use((req, res, next) => {
 });
 
 // Define Routes - these must come BEFORE the static file middleware
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api/users', require('./routes/users'));
-app.use('/api/admin', require('./routes/admin'));
-app.use('/api/questions', require('./routes/questions'));
-app.use('/api/practice', require('./routes/practice'));
-app.use('/api/ai', require('./routes/geminiExplain'));
+app.use('/api/auth', require('.server/routes/auth'));
+app.use('/api/users', require('./server/routes/users'));
+app.use('/api/questions', require('./server/routes/questions'));
+app.use('/api/practice', require('./server/routes/practice'));
+app.use('/api/ai', require('./server/routes/geminiExplain'));
 
 // Add a test route directly in server.js
 app.get('/api/test', (req, res) => {
