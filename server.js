@@ -67,11 +67,11 @@ app.get('/api/test-auth', (req, res) => {
 });
 
 // Serve static files from the public directory - this should come AFTER API routes
-app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // For any route not handled by API or static files, serve index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '..', 'public', 'index.html'));
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
 const PORT = process.env.PORT || 50011;
