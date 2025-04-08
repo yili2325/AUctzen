@@ -330,17 +330,78 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
+        margin-bottom: 20px;
     }
-
+    
     .category-grid {
         grid-template-columns: 1fr;
     }
-
+    
     .notice-content {
         padding: 1.5rem;
         flex-direction: column;
         text-align: center;
         align-items: center;
+    }
+    
+    /* Improved mobile typography */
+    .practice-heading h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .practice-heading p {
+        font-size: 0.95rem;
+    }
+    
+    .question-text {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+    
+    .option-card {
+        font-size: 0.95rem;
+        padding: 10px 12px;
+    }
+}
+
+/* Smaller mobile screens */
+@media (max-width: 480px) {
+    .practice-heading h1 {
+        font-size: 1.6rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .question-text {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+    
+    .timer-display {
+        font-size: 0.9rem;
+    }
+    
+    .option-card {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+        margin-bottom: 6px;
+    }
+    
+    .explanation-box p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .category-tag {
+        font-size: 0.8rem;
+        padding: 3px 8px;
     }
 }
 
@@ -2020,3 +2081,289 @@ body {
     border-radius: 6px;
     cursor: pointer;
   }
+
+/* Mobile-specific styles for practice page */
+@media (max-width: 768px) {
+  /* Top padding adjustment to account for fixed header */
+  main {
+    padding-top: 10px;
+  }
+  
+  .page-title {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+  }
+  
+  .category-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-header {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Adjust grid to show more items per row on mobile */
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  .category-card {
+    padding: 8px;
+    min-height: auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .category-card .card-content {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .category-card h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    margin-left: 8px;
+  }
+  
+  .category-card p {
+    display: none;
+  }
+  
+  .hide-on-mobile {
+    display: none;
+  }
+  
+  .category-icon {
+    font-size: 1rem;
+    margin-right: 0;
+  }
+  
+  .start-practice-container {
+    margin-top: 15px !important;
+  }
+  
+  .btn-large {
+    padding: 8px 20px;
+    font-size: 1rem;
+  }
+  
+  /* Make main padding more compact */
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* Further reduction for very small screens */
+  @media (max-width: 480px) {
+    .category-card h3 {
+      font-size: 0.8rem;
+    }
+    
+    .page-title {
+      font-size: 1.5rem;
+    }
+    
+    .category-grid {
+      gap: 6px;
+    }
+    
+    .category-card {
+      padding: 6px;
+    }
+    
+    .category-card .card-content {
+      padding: 4px;
+    }
+    
+    /* Fixed position for the Start Practice button */
+    .start-practice-container {
+      position: sticky;
+      bottom: 15px;
+      z-index: 10;
+      margin-top: 10px !important;
+    }
+    
+    /* Make the button more visible */
+    #start-practice-btn {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+  }
+}
+
+/* Default styles for page title and start practice container */
+.page-title {
+  margin: 1.5rem 0 1rem;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+}
+
+.start-practice-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Mobile styles for question interface */
+@media (max-width: 768px) {
+  /* More compact question container */
+  .question-container {
+    padding: 15px 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Reduce question text size */
+  .question h3 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  
+  /* More compact answer options */
+  .options {
+    margin-bottom: 15px;
+  }
+  
+  .option {
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+  
+  .option-letter {
+    font-size: 0.9rem;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 8px;
+  }
+  
+  .option-text {
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+  
+  /* Compact explanation box */
+  .explanation-box {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .explanation-title {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+  }
+  
+  /* Fix AI assistant chat interface */
+  .ai-chat-container {
+    max-height: 40vh;
+    bottom: 60px;
+    right: 10px;
+  }
+  
+  .chat-input-container {
+    padding: 8px;
+  }
+  
+  .ai-send-button {
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Move the AI chat toggle button away from the bottom right */
+  .ai-chat-toggle {
+    bottom: 15px;
+    right: 15px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .question h3 {
+    font-size: 1rem;
+  }
+  
+  .option {
+    padding: 8px 10px;
+  }
+  
+  .option-text {
+    font-size: 0.9rem;
+  }
+  
+  /* Move AI chat toggle to bottom left instead to avoid conflicts */
+  .ai-chat-toggle {
+    bottom: 15px;
+    left: 15px;
+    right: auto;
+  }
+}
+
+/* Add these styles to reduce the space between the timer and question */
+.question-header {
+  margin-bottom: 10px !important;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px !important;
+}
+
+.question-content {
+  margin-top: 0 !important;
+}
+
+#question-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.3rem !important;
+}
+
+/* Adjust the question container padding */
+.question-container, .question-card {
+  padding: 25px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .question-header {
+    margin-bottom: 8px !important;
+    padding-bottom: 8px !important;
+  }
+  
+  #question-text {
+    margin-bottom: 15px;
+    font-size: 1.1rem !important;
+  }
+  
+  .question-container, .question-card {
+    padding: 20px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 375px) {
+  .question-header {
+    margin-bottom: 5px !important;
+    padding-bottom: 5px !important;
+    border-bottom: none !important;
+  }
+  
+  #question-text {
+    margin-bottom: 12px;
+    font-size: 1rem !important;
+  }
+  
+  .question-container, .question-card {
+    padding: 15px;
+  }
+}

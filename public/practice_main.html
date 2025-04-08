@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Practice - AusCitizen Test</title>
   <!-- Base styles first -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,6 +13,81 @@
   <link rel="stylesheet" href="/css/geminiCall.css">
   <!-- Practice styles last to override others -->
   <link rel="stylesheet" href="/css/practice.css">
+  
+  <!-- Custom inline styles for fixing mobile UI issues -->
+  <style>
+    /* Fix for AI chat toggle and chat container on mobile */
+    @media (max-width: 576px) {
+      #chat-toggle {
+        left: 15px;
+        right: auto;
+        bottom: 15px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        z-index: 1001;
+      }
+      
+      #chat-container {
+        max-height: 60vh;
+        height: 60vh;
+      }
+      
+      #chat-input-row {
+        padding: 8px;
+        position: relative;
+        z-index: 10;
+      }
+      
+      #chat-input {
+        font-size: 16px;
+        padding: 10px 15px;
+      }
+      
+      #chat-send {
+        position: relative;
+        z-index: 20;
+        padding: 10px 15px;
+        margin-left: 8px;
+        font-size: 14px;
+      }
+      
+      #chat-box {
+        max-height: calc(60vh - 120px);
+      }
+      
+      .message {
+        font-size: 16px;
+        padding: 10px 12px;
+        max-width: 90%;
+      }
+    }
+    
+    /* Even smaller screens */
+    @media (max-width: 375px) {
+      #chat-toggle {
+        width: 45px;
+        height: 45px;
+        left: 10px;
+        bottom: 10px;
+      }
+      
+      .message {
+        font-size: 15px;
+        padding: 8px 10px;
+      }
+      
+      #chat-input {
+        font-size: 15px;
+        padding: 8px 12px;
+      }
+      
+      #chat-send {
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+    }
+  </style>
 </head>
 <body data-requires-auth="true" style="padding-top: 80px;">
   <header class="header">

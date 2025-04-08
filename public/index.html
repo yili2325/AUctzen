@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AusCitizen Test Prep</title>
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/css/custom.css">
@@ -16,16 +16,23 @@
         <nav class="container nav-menu">
             <div class="logo">
                 <img src="/images/logo.png" alt="AusCitizen Logo" height="40">
-                AusCitizen Test
+                <span class="logo-text">AusCitizen Test</span>
             </div>
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="/practice.html">Practice</a>
-                <a href="#features">Features</a>
-                <a id="login-item" href="/login.html" class="btn btn-secondary">Log In</a>
-                <a id="signup-item" href="/signup.html?direct=true" class="btn btn-primary">Sign Up</a>
-                <a id="dashboard-item" href="/dashboard.html" class="btn btn-secondary" style="display: none;">Dashboard</a>
-                <a id="logout-item" href="#" class="btn btn-outline" style="display: none;">Log Out</a>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <div class="page-links">
+                    <a href="/">Home</a>
+                    <a href="/practice.html">Practice</a>
+                    <a href="#features">Features</a>
+                </div>
+                <div class="auth-links">
+                    <a id="login-item" href="/login.html" class="btn btn-secondary">Log In</a>
+                    <a id="signup-item" href="/signup.html?direct=true" class="btn btn-primary">Sign Up</a>
+                    <a id="dashboard-item" href="/dashboard.html" class="btn btn-secondary" style="display: none;">Dashboard</a>
+                    <a id="logout-item" href="#" class="btn btn-outline" style="display: none;">Log Out</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -386,12 +393,79 @@
     <script src="/js/auth.js"></script>
     <script src="./js/main.js"></script>
     <script>
-        // Initialize AOS
+        // Initialize AOS animation library
         AOS.init({
             duration: 800,
             easing: 'ease-in-out',
             once: true
         });
+
+        // Handle mobile menu toggle
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+            
+            // Toggle hamburger/close icon
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                const navLinks = document.getElementById('nav-links');
+                const menuToggle = document.getElementById('mobile-menu-toggle');
+                const icon = menuToggle.querySelector('i');
+                
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.remove('active');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+
+        // Handle header scroll effect
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Handle mobile navigation
+        function adjustForMobile() {
+            if (window.innerWidth <= 768) {
+                header.classList.add('mobile-view');
+            } else {
+                header.classList.remove('mobile-view');
+                
+                // Ensure nav-links are visible on desktop regardless of previous state
+                const navLinks = document.getElementById('nav-links');
+                navLinks.classList.remove('active');
+                
+                // Reset hamburger icon
+                const menuToggle = document.getElementById('mobile-menu-toggle');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
+        
+        // Run on page load and window resize
+        window.addEventListener('resize', adjustForMobile);
+        adjustForMobile();
+        
+        // Trigger scroll event to apply header styles initially
+        window.dispatchEvent(new Event('scroll'));
 
         // Demo tabs functionality
         document.addEventListener('DOMContentLoaded', function() {
@@ -421,16 +495,6 @@
             });
         });
         
-        // Add scrolled class to header on scroll
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 10) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
         document.addEventListener('DOMContentLoaded', function() {
             // Check if user is logged in
             const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';

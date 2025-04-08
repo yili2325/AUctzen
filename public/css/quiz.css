@@ -137,3 +137,179 @@
 .navigation button:hover::after {
   transform: translateX(0);
 }
+
+/* Reduce space between timer and question */
+.question-header {
+  margin-bottom: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.question-content {
+  margin-top: 0 !important;
+}
+
+#question-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Mobile styles for quiz interface */
+@media (max-width: 768px) {
+  /* Question container */
+  .question-text {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+  
+  /* Category tag */
+  .category-tag {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Question number and timer */
+  .question-number {
+    font-size: 0.9rem;
+  }
+  
+  .timer-display {
+    font-size: 1rem;
+  }
+  
+  /* Answer options */
+  .answer-option {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+  
+  .option-label {
+    font-size: 0.9rem;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+  }
+  
+  .option-content {
+    font-size: 0.95rem;
+    padding-left: 8px;
+    line-height: 1.3;
+  }
+  
+  /* Explanation section */
+  .explanation {
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+  }
+  
+  .explanation-header {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .explanation-content {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* Navigation buttons */
+  .navigation-buttons .btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+  
+  /* Quiz container */
+  .quiz-container {
+    padding: 10px;
+  }
+  
+  /* Question header components */
+  .question-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px !important;
+    padding-bottom: 8px !important;
+  }
+  
+  /* Further reduce space between timer and question on mobile */
+  .question-content {
+    margin-top: 0 !important;
+  }
+  
+  #question-text {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 375px) {
+  .question-text {
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+  
+  .answer-option {
+    padding: 8px;
+  }
+  
+  .option-label {
+    font-size: 0.85rem;
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    line-height: 22px;
+  }
+  
+  .option-content {
+    font-size: 0.85rem;
+    padding-left: 5px;
+  }
+  
+  .explanation {
+    padding: 10px;
+  }
+  
+  .explanation-content {
+    font-size: 0.85rem;
+  }
+  
+  .timer-display {
+    font-size: 0.85rem;
+  }
+  
+  .category-tag {
+    font-size: 0.75rem;
+    padding: 2px 6px;
+  }
+  
+  /* Make sure things fit on small screens */
+  .question-container {
+    padding: 8px;
+  }
+  
+  .explanation-header {
+    font-size: 0.9rem;
+  }
+  
+  .navigation-buttons .btn {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+  
+  /* Minimize space between timer and question on very small screens */
+  .question-header {
+    margin-bottom: 5px !important;
+    padding-bottom: 5px !important;
+    border-bottom: none !important;
+  }
+  
+  #question-text {
+    margin-bottom: 12px;
+  }
+}

@@ -17,7 +17,10 @@
                 <img src="/images/logo.png" alt="AusCitizen Logo" style="width: 50px; height: 50px; border-radius:50%">
                 AusCitizen Test
             </div>
-            <div class="nav-links">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" style="color: white;">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="nav-links">
                 <a href="/">Home</a>
                 <a href="/practice_main.html">Practice</a>
                 <a href="/#features">Features</a>
@@ -63,7 +66,7 @@
             </section>
             
             <section class="category-performance">
-                <h2>Category Performance</h2>
+                <h2><i class="fas fa-chart-pie"></i> Category Performance</h2>
                 <div class="category-list">
                     <div class="category-item">
                         <div class="category-header">
@@ -83,7 +86,7 @@
                             <div class="category-icon">
                                 <i class="fas fa-balance-scale"></i>
                             </div>
-                            <h3 class="category-title">Australia's democratic beliefs, rights and liberties</h3>
+                            <h3 class="category-title">Democratic beliefs and rights</h3>
                         </div>
                         <div class="category-score">Score: 0/0</div>
                         <div class="progress-bar">
@@ -96,7 +99,7 @@
                             <div class="category-icon">
                                 <i class="fas fa-landmark"></i>
                             </div>
-                            <h3 class="category-title">Government and the law in Australia</h3>
+                            <h3 class="category-title">Government and law</h3>
                         </div>
                         <div class="category-score">Score: 0/0</div>
                         <div class="progress-bar">
@@ -122,7 +125,16 @@
             <section class="recommendations dashboard-animate">
                 <h2><i class="fas fa-lightbulb"></i> Recommended Practice</h2>
                 <div class="recommendation-list" id="recommendation-list">
-                    <!-- Recommendations will be inserted here by JavaScript -->
+                    <a href="/practice_main.html" class="practice-recommendation-card">
+                        <div class="practice-recommendation-content">
+                            <div class="recommendation-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="recommendation-text">
+                                <p>Take practice tests to get personalized recommendations</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </section>
             
@@ -150,7 +162,7 @@
                     
                     <div class="subscription-detail">
                         <h3>Price</h3>
-                        <p id="subscription-renewal">$0 - Always Free</p>
+                        <p id="subscription-renewal">$0 - Free</p>
                     </div>
                 </div>
                 
@@ -195,6 +207,41 @@
 
     <script src="/js/auth.js"></script>
     <script src="/js/dashboard.js"></script>
+    
+    <!-- Mobile menu toggle script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const navLinks = document.getElementById('nav-links');
+            
+            if (mobileMenuToggle && navLinks) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                    
+                    // Change icon based on menu state
+                    const icon = mobileMenuToggle.querySelector('i');
+                    if (navLinks.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-times');
+                    } else {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+                
+                // Close menu when a link is clicked
+                const links = navLinks.querySelectorAll('a');
+                links.forEach(link => {
+                    link.addEventListener('click', function() {
+                        navLinks.classList.remove('active');
+                        const icon = mobileMenuToggle.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    });
+                });
+            }
+        });
+    </script>
     
     <!-- Clear browser cache for dashboard.js -->
     <script>

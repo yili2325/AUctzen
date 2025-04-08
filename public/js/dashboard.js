@@ -319,87 +319,61 @@ function updateCategoryPerformance(categoryData) {
 }
 
 function updateRecommendations(recommendations) {
-    const recommendationList = document.getElementById('recommendation-list');
-    if (!recommendationList) return;
+    const recommendationsList = document.getElementById('recommendation-list');
+    if (!recommendationsList) return;
     
-    // Clear existing recommendations
-    recommendationList.innerHTML = '';
+    // Clear current recommendations
+    recommendationsList.innerHTML = '';
     
-    // Check if recommendations exists and is an array
-    if (!recommendations || !Array.isArray(recommendations) || recommendations.length === 0) {
-        // Create a message for no recommendations
-        const noRecommendationsMessage = document.createElement('div');
-        noRecommendationsMessage.className = 'no-recommendations';
-        noRecommendationsMessage.innerHTML = `
-            <div class="empty-state">
-                <i class="fas fa-clipboard-list"></i>
-                <p>Complete more practice tests to get personalized recommendations</p>
-                <a href="/practice_main.html" class="btn btn-primary">Take a Practice Test</a>
-            </div>
+    // If no recommendations, show a prompt
+    if (!recommendations || recommendations.length === 0) {
+        recommendationsList.innerHTML = `
+            <a href="/practice_main.html" class="practice-recommendation-card">
+                <div class="practice-recommendation-content">
+                    <div class="recommendation-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div class="recommendation-text">
+                        <p>Take practice tests to get personalized recommendations</p>
+                    </div>
+                </div>
+            </a>
         `;
-        recommendationList.appendChild(noRecommendationsMessage);
         return;
     }
-
-    // Add each recommendation to the list
+    
+    // Add each recommendation
     recommendations.forEach(recommendation => {
-        if (!recommendation || !recommendation.category) return;
+        // Simplified recommendation format
+        const recommendationCard = document.createElement('a');
+        recommendationCard.href = `/practice.html?category=${encodeURIComponent(recommendation.category)}`;
+        recommendationCard.className = 'practice-recommendation-card';
         
-        const recommendationItem = document.createElement('div');
-        recommendationItem.className = 'recommendation-item';
+        const content = document.createElement('div');
+        content.className = 'practice-recommendation-content';
         
-        // Determine appropriate icon
-        let icon = 'fas fa-star';
-        if (recommendation.category.includes('people')) {
-            icon = 'fas fa-users';
-        } else if (recommendation.category.includes('democratic') || recommendation.category.includes('beliefs')) {
-            icon = 'fas fa-balance-scale';
-        } else if (recommendation.category.includes('Government') || recommendation.category.includes('law')) {
-            icon = 'fas fa-landmark';
-        } else if (recommendation.category.includes('values')) {
-            icon = 'fas fa-heart';
-        }
+        // Create icon
+        const iconDiv = document.createElement('div');
+        iconDiv.className = 'recommendation-icon';
+        const iconElement = document.createElement('i');
+        iconElement.className = getCategoryIcon(recommendation.category);
+        iconDiv.appendChild(iconElement);
         
-        recommendationItem.innerHTML = `
-            <div class="recommendation-icon">
-                <i class="${icon}"></i>
-            </div>
-            <div class="recommendation-content">
-                <h3>${recommendation.category}</h3>
-                <p>${recommendation.message || 'Practice this category to improve your score'}</p>
-                <a href="/practice_main.html?category=${encodeURIComponent(recommendation.category)}" class="recommendation-action">
-                    Practice Now
-                </a>
-            </div>
-        `;
+        // Create text content
+        const textDiv = document.createElement('div');
+        textDiv.className = 'recommendation-text';
+        const textP = document.createElement('p');
+        textP.textContent = recommendation.message || `Practice ${formatCategoryName(recommendation.category)} to improve your score`;
+        textDiv.appendChild(textP);
         
-        recommendationList.appendChild(recommendationItem);
+        // Assemble card
+        content.appendChild(iconDiv);
+        content.appendChild(textDiv);
+        recommendationCard.appendChild(content);
+        
+        // Add to list
+        recommendationsList.appendChild(recommendationCard);
     });
-
-    // Add styles for empty state if needed
-    if (!document.querySelector('style#empty-state-styles')) {
-        const style = document.createElement('style');
-        style.id = 'empty-state-styles';
-        style.textContent = `
-            .empty-state {
-                text-align: center;
-                padding: 2rem;
-                color: #6c757d;
-            }
-            .empty-state i {
-                font-size: 3rem;
-                margin-bottom: 1rem;
-                opacity: 0.5;
-            }
-            .empty-state p {
-                margin-bottom: 1.5rem;
-            }
-            .no-recommendations {
-                width: 100%;
-            }
-        `;
-        document.head.appendChild(style);
-    }
 }
 
 // Helper function to determine score class for styling

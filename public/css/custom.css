@@ -542,4 +542,419 @@ body {
   padding: 0.9rem 2rem;
   font-size: 1.1rem;
   border-radius: 50px;
-} 
+}
+
+/* Styling for the updated navigation structure */
+.logo-text {
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+.page-links, .auth-links {
+  display: flex;
+  align-items: center;
+}
+
+.auth-links {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+  
+  .header {
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .nav-menu {
+    height: auto;
+    padding: 8px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo img {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+  }
+  
+  .logo-text {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-links.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .page-links, .auth-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    align-items: center;
+  }
+  
+  .page-links a, .auth-links a {
+    width: 80%;
+    text-align: center;
+    padding: 12px 0;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .auth-links {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-left: 0;
+  }
+  
+  .auth-links a.btn {
+    width: 80%;
+    text-align: center;
+    margin: 5px 0;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .nav-menu {
+    padding: 6px 8px;
+  }
+  
+  .logo img {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .page-links a {
+    font-size: 0.7rem;
+    padding: 4px 5px;
+  }
+  
+  .auth-links a.btn {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+}
+
+/* Tablet and desktop improvements */
+@media (min-width: 769px) {
+  /* More compact navigation for better spacing */
+  .mobile-menu-toggle {
+    display: none;
+  }
+  
+  /* More compact navigation for better spacing */
+  .nav-menu {
+    height: 70px;
+  }
+  
+  body {
+    padding-top: 70px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .page-links {
+    gap: 1.5rem;
+  }
+  
+  .page-links a {
+    font-size: 0.95rem;
+    padding: 0;
+  }
+  
+  .auth-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .auth-links a.btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Sticky compact header that shows on scroll */
+.header.scrolled {
+  height: auto;
+}
+
+.header.scrolled .nav-menu {
+  height: 60px;
+}
+
+.header.scrolled .logo img {
+  height: 32px;
+  width: 32px;
+}
+
+.header.scrolled .nav-links a:not(.btn) {
+  font-size: 0.9rem;
+}
+
+.header.scrolled .nav-links .btn {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+}
+
+/* Mobile header special states */
+.header.mobile-view {
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header.mobile-view .nav-menu {
+  padding: 6px 10px;
+}
+
+.header.mobile-view.scrolled {
+  background-color: rgba(32, 50, 91, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.header.mobile-view.scrolled .nav-menu {
+  padding: 4px 10px;
+}
+
+.header.mobile-view.scrolled .logo img {
+  height: 24px;
+  width: 24px;
+  transition: all 0.3s ease;
+}
+
+.header.mobile-view.scrolled .page-links a {
+  font-size: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.header.mobile-view.scrolled .auth-links a.btn {
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+/* Mobile hamburger navigation */
+.mobile-menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  background: none;
+  border: none;
+  padding: 10px;
+  margin: 0;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.mobile-menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+.mobile-menu-toggle i {
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle i.fa-times {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+  
+  .header {
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .nav-menu {
+    height: auto;
+    padding: 8px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo img {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+  }
+  
+  .logo-text {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-links.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .page-links, .auth-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    align-items: center;
+  }
+  
+  .page-links a, .auth-links a {
+    width: 80%;
+    text-align: center;
+    padding: 12px 0;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .auth-links {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-left: 0;
+  }
+  
+  .auth-links a.btn {
+    width: 80%;
+    text-align: center;
+    margin: 5px 0;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+}
+
+/* Tablet and desktop improvements */
+@media (min-width: 769px) {
+  /* More compact navigation for better spacing */
+  .mobile-menu-toggle {
+    display: none;
+  }
+  
+  /* More compact navigation for better spacing */
+  .nav-menu {
+    height: 70px;
+  }
+  
+  body {
+    padding-top: 70px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .page-links {
+    gap: 1.5rem;
+  }
+  
+  .page-links a {
+    font-size: 0.95rem;
+    padding: 0;
+  }
+  
+  .auth-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .auth-links a.btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Sticky compact header that shows on scroll */
+.header.scrolled {
+  height: auto;
+}
+
+/* Other styles continue below */ 

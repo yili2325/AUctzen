@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Australian Citizenship Test Practice</title>
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/practice.css">
@@ -18,23 +18,30 @@
     <nav class="container nav-menu">
       <div class="logo">
         <img src="/images/logo.png" alt="AusCitizen Logo" height="40">
-        AusCitizen Test
+        <span class="logo-text">AusCitizen Test</span>
       </div>
-      <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/practice.html" class="active">Practice</a>
-        <a href="/#features">Features</a>
-        <a id="login-item" href="/login.html" class="btn btn-secondary">Log In</a>
-        <a id="signup-item" href="/signup.html?direct=true" class="btn btn-primary">Sign Up</a>
-        <a id="dashboard-item" href="/dashboard.html" class="btn btn-secondary" style="display: none;">Dashboard</a>
-        <a id="logout-item" href="#" class="btn btn-outline" style="display: none;">Log Out</a>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <div class="page-links">
+          <a href="/">Home</a>
+          <a href="/practice.html" class="active">Practice</a>
+          <a href="/#features">Features</a>
+        </div>
+        <div class="auth-links">
+          <a id="login-item" href="/login.html" class="btn btn-secondary">Log In</a>
+          <a id="signup-item" href="/signup.html?direct=true" class="btn btn-primary">Sign Up</a>
+          <a id="dashboard-item" href="/dashboard.html" class="btn btn-secondary" style="display: none;">Dashboard</a>
+          <a id="logout-item" href="#" class="btn btn-outline" style="display: none;">Log Out</a>
+        </div>
       </div>
     </nav>
   </header>
 
   <main>
     <div class="container">
-      <h1>Practice Questions</h1>
+      <h1 class="page-title">Practice Questions</h1>
       
       <div class="category-section">
         <div class="section-header">
@@ -46,44 +53,39 @@
                 <div class="card-content">
                     <i class="fas fa-layer-group category-icon"></i>
                     <h3>All Categories</h3>
-                    <p>Practice questions from all categories</p>
                 </div>
             </button>
             
             <button class="category-card" data-category="australia-and-people">
                 <div class="card-content">
                     <i class="fas fa-users category-icon"></i>
-                    <h3>Australia and its people</h3>
-                    <p>Learn about Australia's people and traditions</p>
+                    <h3>Australia & People</h3>
                 </div>
             </button>
             
             <button class="category-card" data-category="democratic-beliefs">
                 <div class="card-content">
                     <i class="fas fa-balance-scale category-icon"></i>
-                    <h3>Democratic beliefs and rights</h3>
-                    <p>Understand Australia's democratic values</p>
+                    <h3>Democratic Values</h3>
                 </div>
             </button>
             
             <button class="category-card" data-category="government-law">
                 <div class="card-content">
                     <i class="fas fa-landmark category-icon"></i>
-                    <h3>Government and law</h3>
-                    <p>Learn about Australia's government system</p>
+                    <h3>Government & Law</h3>
                 </div>
             </button>
             
             <button class="category-card" data-category="australian-values">
                 <div class="card-content">
                     <i class="fas fa-heart category-icon"></i>
-                    <h3>Australian values</h3>
-                    <p>Discover core Australian values</p>
+                    <h3>Australian Values</h3>
                 </div>
             </button>
         </div>
 
-        <div class="start-practice-container" style="margin-top: 30px; text-align: center;">
+        <div class="start-practice-container">
             <button id="start-practice-btn" class="btn btn-primary btn-large">
                 <i class="fas fa-play-circle"></i> Start Practice Test
             </button>
@@ -134,39 +136,42 @@
     <!-- Signup Popup -->
     <div class="signup-overlay" id="signup-overlay">
       <div class="signup-popup">
-        <div class="signup-header">
-          <h2>Create Your Free Account</h2>
-          <p>Save your progress and continue your citizenship journey</p>
-        </div>
+        <div class="signup-content">
+          <button class="close-button" id="close-signup">&times;</button>
+          <div class="signup-header">
+            <h2>Create Your Free Account</h2>
+            <p>Save your progress and continue your citizenship journey</p>
+          </div>
 
-        <div class="users-count">
-          <i class="fas fa-users"></i> <span class="counter-number" id="user-counter">27,435</span> users have already passed with our help
-        </div>
+          <div class="users-count">
+            <i class="fas fa-users"></i> <span class="counter-number" id="user-counter">27,435</span> users have already passed with our help
+          </div>
 
-        <div class="popup-message">
-          <p>Don't lose your progress — create a free account to track your results!</p>
+          <div class="popup-message">
+            <p>Don't lose your progress — create a free account to track your results!</p>
+          </div>
+          
+          <form id="signup-form" class="signup-form">
+            <div class="form-group">
+              <label for="signup-name">Full Name</label>
+              <input type="text" id="signup-name" name="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="signup-email">Email Address</label>
+              <input type="email" id="signup-email" name="email" placeholder="Enter your email address" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input type="password" id="signup-password" name="password" placeholder="Create a strong password" required>
+              <div class="error-message" id="signup-error-message"></div>
+            </div>
+            
+            <button type="submit" class="signup-button">Create Account & Continue</button>
+            <p class="login-link">Already have an account? <a href="/login.html">Log in</a></p>
+          </form>
         </div>
-        
-        <form id="signup-form" class="signup-form">
-          <div class="form-group">
-            <label for="signup-name">Full Name</label>
-            <input type="text" id="signup-name" name="name" placeholder="Enter your full name" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="signup-email">Email Address</label>
-            <input type="email" id="signup-email" name="email" placeholder="Enter your email address" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="signup-password">Password</label>
-            <input type="password" id="signup-password" name="password" placeholder="Create a strong password" required>
-            <div class="error-message" id="signup-error-message"></div>
-          </div>
-          
-          <button type="submit" class="signup-button">Create Account & Continue</button>
-          <p class="login-link">Already have an account? <a href="/login.html">Log in</a></p>
-        </form>
       </div>
     </div>
   </main>
@@ -205,6 +210,8 @@
 
   <script src="/js/auth.js"></script>
   <script src="/js/practice.js"></script>
+  <script src="/js/local-questions.js"></script>
+
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Helper function to get the API URL
@@ -417,6 +424,11 @@
         });
       });
       
+      // Close button for signup overlay
+      document.getElementById('close-signup').addEventListener('click', function() {
+        document.getElementById('signup-overlay').style.display = 'none';
+      });
+      
       // Prevent closing the signup overlay by clicking outside
       document.querySelector('.signup-overlay .signup-popup').addEventListener('click', function(e) {
         e.stopPropagation();
@@ -523,6 +535,73 @@
         });
       });
     });
+
+    // Handle mobile menu toggle
+    document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('active');
+      
+      // Toggle hamburger/close icon
+      const icon = this.querySelector('i');
+      if (icon.classList.contains('fa-bars')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+    
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', function() {
+        const navLinks = document.getElementById('nav-links');
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const icon = menuToggle.querySelector('i');
+        
+        if (window.innerWidth <= 768) {
+          navLinks.classList.remove('active');
+          icon.classList.remove('fa-times');
+          icon.classList.add('fa-bars');
+        }
+      });
+    });
+
+    // Handle header scroll effect
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Handle mobile navigation
+    function adjustForMobile() {
+      if (window.innerWidth <= 768) {
+        header.classList.add('mobile-view');
+      } else {
+        header.classList.remove('mobile-view');
+        
+        // Ensure nav-links are visible on desktop regardless of previous state
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.remove('active');
+        
+        // Reset hamburger icon
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    }
+    
+    // Run on page load and window resize
+    window.addEventListener('resize', adjustForMobile);
+    adjustForMobile();
+    
+    // Trigger scroll event to apply header styles initially
+    window.dispatchEvent(new Event('scroll'));
   </script>
 </body>
 </html> 

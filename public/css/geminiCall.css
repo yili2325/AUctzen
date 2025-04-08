@@ -279,32 +279,96 @@
 
 /* Responsive styles */
 @media (max-width: 576px) {
-  #chat-container {
+  #chat-container, .ai-chat-container {
     width: 100%;
-    height: 70vh;
-    bottom: 0;
+    height: 60vh;
     right: 0;
+    bottom: 0;
     border-radius: 15px 15px 0 0;
+    max-width: 100%;
   }
   
-  #chat-toggle {
-    width: 75px;
-    height: 75px;
-    font-size: 36px;
+  #chat-toggle, .ai-chat-toggle {
+    width: 50px;
+    height: 50px;
     bottom: 15px;
-    right: 15px;
+    left: 15px;
+    right: auto;
+    font-size: 20px;
+    z-index: 1001;
   }
   
   .message {
-    font-size: 18px;
-    padding: 12px 15px;
+    font-size: 16px;
+    padding: 10px 12px;
   }
   
-  #chat-input {
-    font-size: 18px;
+  #chat-input, .ai-chat-input {
+    font-size: 16px;
+    padding: 12px;
   }
   
   .chat-title {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  
+  .chat-input-container {
+    padding: 8px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Ensure input and send button are properly sized */
+  .chat-input-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Position the send button properly */
+  .ai-send-button {
+    position: relative;
+    right: 0;
+    z-index: 20; /* Higher z-index to ensure it's clickable */
+    margin-left: 8px;
+    width: auto;
+    height: auto;
+    padding: 8px 15px;
+    border-radius: 20px;
+  }
+  
+  /* Make the chat messages area take appropriate space */
+  .chat-messages {
+    max-height: calc(60vh - 120px);
+    overflow-y: auto;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 375px) {
+  .ai-chat-toggle {
+    width: 45px;
+    height: 45px;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+  }
+  
+  .message {
+    font-size: 15px;
+    max-width: 90%;
+    padding: 8px 10px;
+  }
+  
+  .chat-title {
+    font-size: 16px;
+  }
+  
+  .ai-chat-input {
+    font-size: 15px;
+  }
+  
+  .ai-send-button {
+    padding: 6px 12px;
+    font-size: 14px;
   }
 }
