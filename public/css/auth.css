@@ -190,20 +190,7 @@
 }
 
 /* Signup specific styles */
-.name-row {
-    display: flex;
-    gap: 1rem;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 @media (max-width: 576px) {
-    .name-row {
-        flex-direction: column;
-        gap: 0;
-    }
-    
     .auth-form-section {
         padding: 0 1rem;
     }

@@ -6,7 +6,17 @@ let chatContainer = document.getElementById("chat-container");
 
 // Initialize - Add toggle button if it doesn't exist
 function initChatInterface() {
+  console.log('Initializing chat interface...');
+  
   // Re-query elements to ensure they exist (in case DOM wasn't ready before)
+  chatContainer = document.getElementById('chat-container');
+  
+  // If chat container doesn't exist, create the entire chat interface
+  if (!chatContainer) {
+    createChatInterface();
+  }
+  
+  // Re-query elements after possible creation
   chatContainer = document.getElementById('chat-container');
   const chatMessages = document.getElementById('chat-messages');
   chatInput = document.getElementById('chat-input');
@@ -45,16 +55,36 @@ function initChatInterface() {
     });
   }
   
+  // Create chat input row if it doesn't exist
+  let chatInputRow = document.getElementById('chat-input-row');
+  if (!chatInputRow && chatContainer) {
+    // Create the chat input row for better structure and styling
+    chatInputRow = document.createElement('div');
+    chatInputRow.id = 'chat-input-row';
+    chatInputRow.className = 'chat-input-row';
+    chatInputRow.style.display = 'flex';
+    chatInputRow.style.width = '100%';
+    chatInputRow.style.position = 'relative';
+    chatInputRow.style.zIndex = '10';
+    chatContainer.appendChild(chatInputRow);
+    
+    // Move existing input and button into the new row if they exist
+    if (chatInput) chatInputRow.appendChild(chatInput);
+    if (sendButton) chatInputRow.appendChild(sendButton);
+  }
+  
   // Make send button more accessible on mobile
-  if (window.innerWidth <= 576) {
+  if (window.innerWidth <= 576 && sendButton) {
     sendButton.style.position = 'relative';
     sendButton.style.zIndex = '20';
+    sendButton.style.minWidth = '60px'; // Ensure button is wide enough to tap
+    sendButton.style.height = '44px';
+    sendButton.style.marginLeft = '8px';
     
-    // Add a higher z-index to the chat input row to ensure it's above other elements
-    const chatInputRow = document.getElementById('chat-input-row');
-    if (chatInputRow) {
-      chatInputRow.style.position = 'relative';
-      chatInputRow.style.zIndex = '10';
+    // Make sure chat input has correct styles
+    if (chatInput) {
+      chatInput.style.flex = '1';
+      chatInput.style.minHeight = '44px';
     }
     
     // Move toggle button to bottom left on mobile for better accessibility
@@ -62,7 +92,7 @@ function initChatInterface() {
     if (toggleButton && window.innerWidth <= 480) {
       toggleButton.style.left = '10px';
       toggleButton.style.right = 'auto';
-      toggleButton.style.bottom = '10px';
+      toggleButton.style.bottom = '100px'; // Moved higher on mobile screens
     }
   }
 }
@@ -180,9 +210,30 @@ function generateFallbackResponse(userQuestion, questionText, answerText) {
   }
 }
 
-async function askAI() {
+async function askAI(event) {
+  console.log('askAI function called');
+  
+  // Prevent default if event is provided
+  if (event && event.preventDefault) {
+    event.preventDefault();
+  }
+  
+  // Get chat input value
+  const chatInput = document.getElementById("chat-input");
+  if (!chatInput) {
+    console.error('Chat input element not found');
+    return;
+  }
+  
   const userQuestion = chatInput.value.trim();
-  if (!userQuestion) return;
+  console.log('User question:', userQuestion);
+  
+  if (!userQuestion) {
+    console.log('Empty question, not proceeding');
+    return;
+  }
+  
+  console.log('Processing AI question:', userQuestion);
 
   addMessage(userQuestion, "user");
   chatInput.value = "";
@@ -235,22 +286,84 @@ function showNewFeatureNotification() {
   if (badge) badge.style.display = 'flex';
 }
 
+// Create paper plane icon button (no text)
+function createPaperPlaneButton() {
+  console.log('Creating paper plane icon button');
+  
+  // Remove any existing send button if it exists
+  const existingButton = document.getElementById('send-button');
+  if (existingButton) {
+    existingButton.remove();
+  }
+  
+  // Create a new button with ONLY the paper plane icon (no text)
+  const iconButton = document.createElement('button');
+  iconButton.id = 'send-button';
+  iconButton.innerHTML = '<i class="fas fa-paper-plane"></i>';
+  
+  // Style the button for better visibility and tap target size
+  iconButton.style.minWidth = '50px';
+  iconButton.style.height = '42px';
+  iconButton.style.position = 'relative';
+  iconButton.style.zIndex = '100';
+  iconButton.style.marginLeft = '8px';
+  iconButton.style.backgroundColor = '#0056b3';
+  iconButton.style.color = 'white';
+  iconButton.style.border = 'none';
+  iconButton.style.borderRadius = '4px';
+  iconButton.style.cursor = 'pointer';
+  iconButton.style.touchAction = 'manipulation';
+  iconButton.style.display = 'flex';
+  iconButton.style.alignItems = 'center';
+  iconButton.style.justifyContent = 'center';
+  
+  // Add event listeners with debugging
+  iconButton.onclick = function(e) {
+    console.log('Paper plane button clicked');
+    e.preventDefault();
+    askAI();
+    return false;
+  };
+  
+  // Add touchend event for mobile
+  iconButton.addEventListener('touchend', function(e) {
+    console.log('Touch ended on paper plane button');
+    e.preventDefault();
+    askAI();
+  });
+  
+  return iconButton;
+}
+
 // Add event listeners
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM loaded - initializing chat');
   initChatInterface();
+  
+  // Create and add the paper plane icon button (no text)
+  const chatInputRow = document.getElementById('chat-input-row');
+  if (chatInputRow) {
+    const paperPlaneButton = createPaperPlaneButton();
+    chatInputRow.appendChild(paperPlaneButton);
+  }
   
   // Re-get references after DOM is fully loaded
   chatInput = document.getElementById("chat-input");
   sendButton = document.getElementById("send-button");
   
-  // Add event listeners to the chat buttons
-  if (sendButton) {
-    sendButton.addEventListener("click", askAI);
-  }
-  
   if (chatInput) {
+    // Clear any existing event listeners
+    const newChatInput = chatInput.cloneNode(true);
+    chatInput.parentNode.replaceChild(newChatInput, chatInput);
+    chatInput = newChatInput;
+    
+    // Add event listener for Enter key
     chatInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") askAI();
+      if (e.key === "Enter") {
+        console.log('Enter key pressed in chat input');
+        e.preventDefault();
+        askAI();
+      }
     });
   }
   
@@ -269,6 +382,97 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', applyResponsiveStyles);
 });
 
+// Create complete chat interface programmatically
+function createChatInterface() {
+  console.log('Creating complete chat interface');
+  
+  // Create chat container
+  const container = document.createElement('div');
+  container.id = 'chat-container';
+  container.className = 'chat-container hidden';
+  container.style.display = 'flex';
+  container.style.flexDirection = 'column';
+  
+  // Create header
+  const header = document.createElement('div');
+  header.className = 'chat-header';
+  header.innerHTML = `
+    <div class="chat-title">
+      <i class="fas fa-robot"></i>
+      AI Study Assistant
+    </div>
+    <button id="chat-close" class="chat-close">&times;</button>
+  `;
+  
+  // Create chat box
+  const chatBox = document.createElement('div');
+  chatBox.id = 'chat-box';
+  chatBox.className = 'chat-box';
+  
+  // Add welcome message
+  const welcomeMsg = document.createElement('div');
+  welcomeMsg.className = 'message ai';
+  welcomeMsg.innerHTML = `
+    <div class="message-content">
+      👋 Welcome to AI Assistant! I can help explain questions and provide information about the Australian Citizenship Test.
+    </div>
+    <span class="timestamp">${new Date().toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}</span>
+  `;
+  chatBox.appendChild(welcomeMsg);
+  
+  // Create chat input container
+  const inputContainer = document.createElement('div');
+  inputContainer.className = 'chat-input-container';
+  
+  // Create chat input row
+  const inputRow = document.createElement('div');
+  inputRow.id = 'chat-input-row';
+  inputRow.className = 'chat-input-row';
+  inputRow.style.display = 'flex';
+  inputRow.style.width = '100%';
+  
+  // Create chat input
+  const input = document.createElement('input');
+  input.type = 'text';
+  input.id = 'chat-input';
+  input.className = 'chat-input';
+  input.placeholder = 'Ask me something...';
+  input.style.flex = '1';
+  input.style.padding = '12px 15px';
+  input.style.borderRadius = '4px';
+  input.style.boxSizing = 'border-box';
+  inputRow.appendChild(input);
+  
+  // Add the paper plane icon button (no text)
+  const paperPlaneButton = createPaperPlaneButton();
+  inputRow.appendChild(paperPlaneButton);
+  
+  // Assemble the interface
+  inputContainer.appendChild(inputRow);
+  container.appendChild(header);
+  container.appendChild(chatBox);
+  container.appendChild(inputContainer);
+  document.body.appendChild(container);
+  
+  // Create toggle button
+  if (!document.getElementById('chat-toggle')) {
+    const toggleBtn = document.createElement('button');
+    toggleBtn.id = 'chat-toggle';
+    toggleBtn.innerHTML = '<i class="fas fa-robot"></i><span class="notification-badge">1</span>';
+    toggleBtn.title = 'Chat with AI Assistant';
+    toggleBtn.addEventListener('click', toggleChat);
+    document.body.appendChild(toggleBtn);
+  }
+  
+  // Add close button functionality
+  const closeBtn = document.getElementById('chat-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      container.classList.add('hidden');
+    });
+  }
+}
+
 // Function to apply responsive styles based on screen width
 function applyResponsiveStyles() {
   const chatToggle = document.getElementById('chat-toggle');
@@ -282,23 +486,17 @@ function applyResponsiveStyles() {
       if (window.innerWidth <= 480) {
         chatToggle.style.left = '10px';
         chatToggle.style.right = 'auto';
-        chatToggle.style.bottom = '10px';
+        chatToggle.style.bottom = '100px'; // Moved higher on mobile screens
         chatToggle.style.width = '45px';
         chatToggle.style.height = '45px';
       } else {
         // On larger mobile screens
         chatToggle.style.left = '15px';
         chatToggle.style.right = 'auto';
-        chatToggle.style.bottom = '15px';
+        chatToggle.style.bottom = '100px'; // Moved higher on mobile screens
         chatToggle.style.width = '50px';
         chatToggle.style.height = '50px';
       }
-    }
-    
-    // Ensure send button is accessible
-    if (sendButton) {
-      sendButton.style.position = 'relative';
-      sendButton.style.zIndex = '20';
     }
     
     // Ensure chat input row is positioned properly

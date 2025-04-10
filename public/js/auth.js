@@ -29,36 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Form submission
-if (document.getElementById('signup-form')) {
-    document.getElementById('signup-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form values
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        const confirmPassword = document.getElementById('confirm-password').value;
-        const selectedPlan = document.querySelector('.plan-option.selected').dataset.plan;
-        
-        // Validate passwords match
-        if (password !== confirmPassword) {
-            alert('Passwords do not match!');
-            return;
-        }
-        
-        // In a real app, you would send this data to your server
-        console.log('Signup data:', { name, email, password, plan: selectedPlan });
-        
-        // Redirect based on plan
-        if (selectedPlan === 'free') {
-            window.location.href = '/practice.html?plan=free';
-        } else if (selectedPlan === 'premium') {
-            window.location.href = '/payment.html?plan=premium';
-        } else if (selectedPlan === 'lifetime') {
-            window.location.href = '/payment.html?plan=lifetime';
-        }
-    });
-}
 
 // Get API URL function
 function getApiUrl() {
@@ -480,16 +450,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.log('Simple login endpoint not available:', endpointError);
                 }
                 
-                // Fallback: use emergency login
-                console.log('Using emergency fallback login');
-                localStorage.setItem('isLoggedIn', 'true');
-                localStorage.setItem('token', 'emergency-token');
-                localStorage.setItem('user', JSON.stringify({
-                    id: 'emergency-user',
-                    email: email,
-                    name: 'Emergency User',
-                    plan: 'lifetime'
-                }));
                 window.location.href = '/dashboard.html';
                 
             } catch (error) {
@@ -519,3 +479,64 @@ document.addEventListener('DOMContentLoaded', () => {
         redirectIfLoggedIn();
     }
 }); 
+// Signup form handling
+const signupForm = document.getElementById('signup-form');
+if (signupForm) {
+    signupForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const fullName = document.getElementById('fullName').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+
+        if (password !== confirmPassword) {
+            alert('Passwords do not match!');
+            return;
+        }
+
+        const apiUrl = getApiUrl();
+
+        try {
+            const response = await fetch(`${apiUrl}/api/auth/signup`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: fullName,  // ✅ still required by backend
+                    email,
+                    password,
+                    plan: 'free'     // Optional – only if backend still expects this field
+                })
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.message || data.msg || 'Signup failed.');
+            }
+
+            // Save user data
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('userId', data.userId || data.user?.id);
+            localStorage.setItem('isLoggedIn', 'true');
+
+            const user = {
+                id: data.userId || data.user?.id,
+                email,
+                name: fullName,
+                plan: 'free',
+                registrationDate: data.createdAt || new Date().toISOString()
+            };
+            localStorage.setItem('user', JSON.stringify(user));
+
+            // Redirect to practice main page (no payment required anymore)
+            window.location.href = '/practice_main.html';
+
+        } catch (error) {
+            console.error('Signup error:', error);
+            alert(error.message || 'Signup failed. Please try again.');
+        }
+    });
+}

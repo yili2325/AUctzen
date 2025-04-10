@@ -151,6 +151,24 @@ function showCategory(category) {
     }
 }
 
+const fullName = document.getElementById('fullName').value;
+const email = document.getElementById('email').value;
+const password = document.getElementById('password').value;
+
+const payload = {
+  fullName,
+  email,
+  password
+};
+
+fetch('/api/auth/signup', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(payload),
+});
+
 // Function to start practice
 function startPractice() {
     console.log('Starting practice session...');

@@ -145,15 +145,16 @@ router.post(
       return res.status(400).json({ errors: errors.array() });
     }
 
+    // Enhanced debugging: log the raw request body
+    console.log('Raw signup request body:', req.body);
     console.log('Signup request received:', {
       name: req.body.name,
       email: req.body.email,
+      password: req.body.password ? '(password provided)' : '(no password)',
       plan: req.body.plan,
-      firstName: req.body.firstName,
-      lastName: req.body.lastName
     });
 
-    const { name, email, password, plan, firstName, lastName } = req.body;
+    const { name, email, password, plan} = req.body;
 
     try {
       // Check database connection
@@ -211,23 +212,25 @@ router.post(
 
       // Check if user already exists
       let user = await User.findOne({ email });
+
       if (user) {
-        console.log('User already exists with email:', email);
         return res.status(400).json({ msg: 'User already exists' });
       }
 
-      // Create new user
+      // Create new user with detailed logging
+      console.log('Creating user with name:', name || 'undefined');
+      
+      // Ensure we have a valid name
+      const userName = name || 'New User';
+      
       user = new User({
-        name,
+        name: userName, // Ensure we have a valid name
         email,
         password, // Will be hashed by the pre-save hook in User model
-        firstName: firstName || name.split(' ')[0],
-        lastName: lastName || name.split(' ').slice(1).join(' '),
         subscription: {
-          plan: plan || 'basic',
+          plan: 'basic', // Always use 'basic' as it's a valid enum value
           status: 'active',
           startDate: new Date(),
-          expiresAt: plan === 'lifetime' ? null : new Date(Date.now() + 30 * 24 * 60 * 60 * 1000)
         }
       });
 
@@ -241,18 +244,25 @@ router.post(
       // Save user to database
       try {
         await user.save();
-        console.log(`New user saved to database successfully: ${user.email} (${user._id})`);
+        console.log(`New user saved to database successfully: ${email} (${user._id})`);
       } catch (saveError) {
         console.error('Error saving user to database:', saveError);
-        return res.status(500).json({ msg: 'Error saving user to database', error: saveError.message });
+        // Return a more detailed error message for debugging
+        return res.status(500).json({ 
+          msg: 'Server error during registration', 
+          error: saveError.message,
+          details: saveError.errors ? Object.keys(saveError.errors).map(key => {
+            return { path: key, message: saveError.errors[key].message };
+          }) : []
+        });
       }
 
-      // Send admin notification
+      // Notify admin about new registration (if email configured)
       try {
         await sendAdminNotification(user);
-        console.log('Admin notification email sent');
-      } catch (emailErr) {
-        console.error('Failed to send admin notification:', emailErr);
+      } catch (emailError) {
+        console.error('Failed to send admin notification:', emailError);
+        // Continue processing - email notification is not critical
       }
 
       // Create JWT token
@@ -267,8 +277,12 @@ router.post(
         process.env.JWT_SECRET || 'fallbacksecret',
         { expiresIn: '7d' },
         (err, token) => {
-          if (err) throw err;
-          res.json({ 
+          if (err) {
+            console.error('JWT signing error:', err);
+            return res.status(500).json({ msg: 'Error generating authentication token' });
+          }
+          console.log('Registration successful, token generated');
+          return res.status(201).json({ 
             token,
             user: {
               id: user.id,
@@ -480,8 +494,6 @@ router.post('/simple-login', async (req, res) => {
         name: email.split('@')[0],
         email,
         password: hashedPassword,
-        firstName: email.split('@')[0],
-        lastName: 'TestUser',
         subscription: {
           plan: 'lifetime',
           status: 'active',

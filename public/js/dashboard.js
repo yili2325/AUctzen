@@ -792,6 +792,20 @@ function getStatsFromLocalStorage() {
     const testResults = JSON.parse(localStorage.getItem(`testResults_${userId}`)) || [];
     console.log(`Fetching test results for user ${userId}:`, testResults.length, 'results found');
     
+    // If this is a new user with no test results, ensure we return truly empty stats
+    if (testResults.length === 0) {
+        console.log('New user detected with no test history - showing empty dashboard');
+        return {
+            testsCompleted: 0,
+            questionsAnswered: 0,
+            averageScore: 0,
+            totalStudyTime: 0,
+            categoryPerformance: {},
+            performanceHistory: [],
+            recommendations: []
+        };
+    }
+    
     // Initialize statistics
     const stats = {
         testsCompleted: testResults.length,

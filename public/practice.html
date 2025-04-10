@@ -153,8 +153,8 @@
           
           <form id="signup-form" class="signup-form">
             <div class="form-group">
-              <label for="signup-name">Full Name</label>
-              <input type="text" id="signup-name" name="name" placeholder="Enter your full name" required>
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" id="fullName" placeholder="Enter your full name" required>
             </div>
             
             <div class="form-group">
@@ -297,7 +297,7 @@
       document.getElementById('signup-form').addEventListener('submit', function(e) {
         e.preventDefault();
         
-        const name = document.getElementById('signup-name').value;
+        const fullName = document.getElementById('fullName').value;
         const email = document.getElementById('signup-email').value;
         const password = document.getElementById('signup-password').value;
         
@@ -327,7 +327,7 @@
             // Create mock user data
             const mockUser = {
               id: 'user_' + Date.now(),
-              name: name,
+              name: fullName,
               email: email,
               subscription: { plan: 'basic' },
               createdAt: new Date().toISOString()
@@ -362,7 +362,7 @@
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            name: name,
+            name: fullName,
             email: email,
             password: password
           })

@@ -91,16 +91,14 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             // Get form values
-            const firstName = document.getElementById('firstName').value;
-            const lastName = document.getElementById('lastName').value;
-            const name = firstName + ' ' + lastName; // Combine for 'name' field expected by API
+            const fullName = document.getElementById('fullName').value;
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
             const confirmPassword = document.getElementById('confirm-password').value;
             const termsAccepted = document.getElementById('terms').checked;
             
             // Validate form
-            if (!validateForm(name, email, password, confirmPassword, termsAccepted)) {
+            if (!validateForm(fullName, email, password, confirmPassword, termsAccepted)) {
                 return;
             }
             
@@ -118,12 +116,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        name,
-                        firstName,
-                        lastName,
+                        name: fullName,
                         email,
                         password,
-                        plan: selectedPlan
+                        plan: 'basic' // Always use 'basic' as it's a valid enum value
                     })
                 });
                 
@@ -131,7 +127,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const data = await response.json();
                 console.log('Signup response data:', data);
                 
-                if (!response.ok) {
+                // Check for both 200 OK and 201 Created status codes
+                if (response.status !== 200 && response.status !== 201) {
                     throw new Error(data.msg || data.errors?.[0]?.msg || 'Registration failed');
                 }
                 
@@ -156,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 errorMessage.style.color = '#28a745';
                 
                 // Redirect based on selected plan
-                if (selectedPlan === 'basic') {
+                if (selectedPlan === 'basic' || selectedPlan === 'free') {
                     // Redirect to dashboard for free plan
                     setTimeout(() => {
                         window.location.href = '/dashboard.html';
@@ -175,6 +172,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 errorMessage.style.display = 'block';
                 errorMessage.style.color = '#dc3545';
                 
+                console.error('Detailed registration error:', error);
+                
                 // Reset button
                 submitButton.disabled = false;
                 submitButton.textContent = originalButtonText;
@@ -184,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    function validateForm(name, email, password, confirmPassword, termsAccepted) {
+    function validateForm(fullName, email, password, confirmPassword, termsAccepted) {
         const errorMessage = document.getElementById('error-message');
         
         // Reset error message
@@ -192,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function() {
         errorMessage.textContent = '';
         
         // Check if all fields are filled
-        if (!name || !email || !password || !confirmPassword) {
+        if (!fullName || !email || !password || !confirmPassword) {
             errorMessage.textContent = 'Please fill in all fields';
             errorMessage.style.display = 'block';
             return false;

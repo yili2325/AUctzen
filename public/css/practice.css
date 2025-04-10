@@ -2073,14 +2073,7 @@ body {
     border: 1px solid #aaa;
   }
   
-  #chat-send {
-    padding: 8px 16px;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
+  
 
 /* Mobile-specific styles for practice page */
 @media (max-width: 768px) {
