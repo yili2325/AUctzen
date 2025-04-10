@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Form submission
+
 
 // Get API URL function
 function getApiUrl() {
@@ -398,66 +398,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Add simple login button functionality
-    const debugLoginBtn = document.getElementById('debug-login-btn');
-    if (debugLoginBtn) {
-        debugLoginBtn.addEventListener('click', async function() {
-            try {
-                // Check server status first (catch errors silently if endpoint doesn't exist)
-                try {
-                    const statusCheck = await fetch('/api/status');
-                    const statusData = await statusCheck.json();
-                    console.log('Server status check:', statusData);
-                } catch (statusError) {
-                    console.log('Status check failed, continuing anyway:', statusError);
-                }
-                
-                // Get email from input or use default
-                const email = document.getElementById('email').value || 'admin@gmail.com';
-                
-                try {
-                    // Try the simple login endpoint if it exists
-                    const response = await fetch('/api/auth/simple-login', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({ 
-                            email: email,
-                            password: 'any-password-will-work'
-                        })
-                    });
-                    
-                    if (response.ok) {
-                        const data = await response.json();
-                        console.log('Simple login successful:', data);
-                        
-                        // Save authentication data
-                        localStorage.setItem('isLoggedIn', 'true');
-                        localStorage.setItem('token', data.token);
-                        localStorage.setItem('user', JSON.stringify({
-                            id: data.userId,
-                            email: data.user.email,
-                            name: data.user.name,
-                            plan: data.user.subscription?.plan || 'basic'
-                        }));
-                        
-                        // Redirect to dashboard
-                        window.location.href = '/dashboard.html';
-                        return;
-                    }
-                } catch (endpointError) {
-                    console.log('Simple login endpoint not available:', endpointError);
-                }
-                
-                window.location.href = '/dashboard.html';
-                
-            } catch (error) {
-                console.error('Login error:', error);
-                alert('Login failed: ' + error.message);
-            }
-        });
-    }
 });
 
 // Call this when the page loads

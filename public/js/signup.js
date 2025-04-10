@@ -86,7 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Form submission handling
     const signupForm = document.getElementById('signup-form');
-    if (signupForm) {
+    if (signupForm && !signupForm.hasAttribute('data-handled')) {
+        signupForm.setAttribute('data-handled', 'true');
         signupForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
@@ -127,9 +128,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 const data = await response.json();
                 console.log('Signup response data:', data);
                 
-                // Check for both 200 OK and 201 Created status codes
-                if (response.status !== 200 && response.status !== 201) {
-                    throw new Error(data.msg || data.errors?.[0]?.msg || 'Registration failed');
+                // Check if response status is not 2xx (success)
+                if (response.status < 200 || response.status >= 300) {
+                    throw new Error(data.msg || data.message || data.errors?.[0]?.msg || 'Registration failed');
+                }
+                
+                // Check if we have the required data
+                if (!data.token || !data.user) {
+                    throw new Error('Missing token or user data from server response');
                 }
                 
                 // Store the token
@@ -158,12 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     setTimeout(() => {
                         window.location.href = '/dashboard.html';
                     }, 1500);
-                } else {
-                    // Redirect to payment page for paid plans
-                    setTimeout(() => {
-                        window.location.href = `/payment.html?plan=${selectedPlan}`;
-                    }, 1500);
-                }
+                } 
                 
             } catch (error) {
                 // Show error message
@@ -179,6 +180,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 submitButton.textContent = originalButtonText;
                 
                 console.error('Registration error:', error);
+                
+                // Show a more user-friendly alert
+                alert('Server error during registration');
+                
+                // Prevent auto-redirection on error
+                return;
             }
         });
     }
@@ -218,30 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
             errorMessage.style.display = 'block';
             return false;
         }
-        
-        // Check if a plan is selected
-        if (!selectedPlan) {
-            errorMessage.textContent = 'Please select a plan before creating your account';
-            errorMessage.style.display = 'block';
-            
-            // Highlight the plan selection area to draw attention
-            const planOptions = document.querySelector('.plan-options');
-            if (planOptions) {
-                planOptions.classList.add('highlight-selection');
-                setTimeout(() => {
-                    planOptions.classList.remove('highlight-selection');
-                }, 2000);
-            }
-            
-            // Scroll to the plan selection area
-            const planSelection = document.querySelector('.plan-selection-container');
-            if (planSelection) {
-                planSelection.scrollIntoView({ behavior: 'smooth' });
-            }
-            
-            return false;
-        }
-        
+
         // Check if terms are accepted
         if (!termsAccepted) {
             errorMessage.textContent = 'You must accept the Terms of Service and Privacy Policy';

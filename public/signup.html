@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="/css/auth.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
+    <!-- Favicon and round icons -->
+    <link rel="icon" href="/images/logo.ico" type="image/x-icon">
 <body data-redirect-if-logged-in>
     <header class="header">
         <nav class="container nav-menu">
@@ -41,7 +42,10 @@
                         <form id="signup-form">
                             <div class="form-group">
                                 <label for="fullName" class="form-label">Full Name</label>
-                                <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
+                                <div class="input-group">
+                                    <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
+                                    <i class="fas fa-user input-icon"></i>
+                                </div>
                             </div>
                             
                             <div class="form-group">
@@ -142,7 +146,6 @@
         </div>
     </footer>
 
-    <script src="/js/auth.js"></script>
     <script src="/js/signup.js"></script>
 </body>
 </html> 

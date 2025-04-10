@@ -12,12 +12,14 @@
   <link rel="stylesheet" href="/js/geminiCall.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
+  <!-- Favicon and round icons -->
+  <link rel="icon" href="/images/logo.ico" type="image/x-icon">
+
 <body>
   <header class="header">
     <nav class="container nav-menu">
       <div class="logo">
-        <img src="/images/logo.png" alt="AusCitizen Logo" height="40">
+        <img src="/images/logo.png" alt="AusCitizen Logo" height="40" style="border-radius: 50%;">
         <span class="logo-text">AusCitizen Test</span>
       </div>
       <button class="mobile-menu-toggle" id="mobile-menu-toggle">
@@ -154,7 +156,7 @@
           <form id="signup-form" class="signup-form">
             <div class="form-group">
               <label for="fullName">Full Name</label>
-              <input type="text" id="fullName" name="fullName" id="fullName" placeholder="Enter your full name" required>
+              <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Enter your full name" required>
             </div>
             
             <div class="form-group">
@@ -195,11 +197,6 @@
         <div class="footer-section">
           <h4>Contact</h4>
           <p>Email: support@auscitizen.com</p>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
         </div>
       </div>
       <div class="footer-bottom">

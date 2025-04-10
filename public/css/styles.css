@@ -432,16 +432,6 @@ h3 {
   color: var(--white);
 }
 
-.social-links {
-  display: flex;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.social-links a {
-  color: var(--white);
-  font-size: 1.2rem;
-}
 
 .footer-bottom {
   text-align: center;
@@ -500,39 +490,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.social-login {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.social-login-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.social-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 15px;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--light-gray);
-  background-color: var(--white);
-  cursor: pointer;
-  transition: var(--transition);
-  width: 120px;
-}
-
-.social-btn:hover {
-  background-color: var(--light-color);
-}
-
-.social-btn i {
-  margin-right: 8px;
 }
 
 .auth-footer {

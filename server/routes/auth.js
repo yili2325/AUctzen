@@ -189,7 +189,10 @@ router.post(
           process.env.JWT_SECRET || 'temporarysecret',
           { expiresIn: '1d' },
           (err, token) => {
-            if (err) throw err;
+            if (err) {
+              console.error('JWT signing error for temp user:', err);
+              return res.status(500).json({ msg: 'Error generating authentication token' });
+            }
             return res.status(201).json({ 
               token,
               user: {
@@ -223,12 +226,16 @@ router.post(
       // Ensure we have a valid name
       const userName = name || 'New User';
       
+      // Hash password manually to avoid potential middleware issues
+      const salt = await bcrypt.genSalt(10);
+      const hashedPassword = await bcrypt.hash(password, salt);
+      
       user = new User({
         name: userName, // Ensure we have a valid name
         email,
-        password, // Will be hashed by the pre-save hook in User model
+        password: hashedPassword, // Use pre-hashed password to avoid double-hashing
         subscription: {
-          plan: 'basic', // Always use 'basic' as it's a valid enum value
+          plan: plan || 'basic', // Use provided plan or default to 'basic'
           status: 'active',
           startDate: new Date(),
         }
@@ -272,27 +279,42 @@ router.post(
         }
       };
 
-      jwt.sign(
-        payload,
-        process.env.JWT_SECRET || 'fallbacksecret',
-        { expiresIn: '7d' },
-        (err, token) => {
-          if (err) {
-            console.error('JWT signing error:', err);
-            return res.status(500).json({ msg: 'Error generating authentication token' });
-          }
-          console.log('Registration successful, token generated');
-          return res.status(201).json({ 
-            token,
-            user: {
-              id: user.id,
-              name: user.name,
-              email: user.email,
-              subscription: user.subscription
+      // Use Promise-based approach instead of callback
+      try {
+        const token = await new Promise((resolve, reject) => {
+          jwt.sign(
+            payload,
+            process.env.JWT_SECRET || 'fallbacksecret',
+            { expiresIn: '7d' },
+            (err, token) => {
+              if (err) reject(err);
+              else resolve(token);
             }
-          });
-        }
-      );
+          );
+        });
+        
+        console.log('Registration successful, token generated');
+        return res.status(200).json({ 
+          token,
+          user: {
+            id: user.id,
+            name: user.name,
+            email: user.email,
+            subscription: user.subscription
+          }
+        });
+      } catch (tokenErr) {
+        console.error('JWT signing error:', tokenErr);
+        // Still return success since user is created, just without token
+        return res.status(200).json({ 
+          msg: 'Account created but token generation failed. Please log in.',
+          user: {
+            id: user.id,
+            name: user.name,
+            email: user.email
+          }
+        });
+      }
       
     } catch (err) {
       console.error('Signup error:', err.message);
@@ -470,78 +492,6 @@ router.post('/debug-login', async (req, res) => {
     }
 });
 
-// @route   POST api/auth/simple-login
-// @desc    Simple login for testing
-// @access  Public
-router.post('/simple-login', async (req, res) => {
-  try {
-    console.log('Simple login attempt for:', req.body.email);
-    const { email } = req.body;
-    
-    // Check if user exists
-    let user = await User.findOne({ email });
-    
-    // If user doesn't exist, create one
-    if (!user) {
-      console.log('User not found, creating test user with email:', email);
-      
-      // Generate a random password
-      const password = Math.random().toString(36).slice(-8);
-      const salt = await bcrypt.genSalt(10);
-      const hashedPassword = await bcrypt.hash(password, salt);
-      
-      user = new User({
-        name: email.split('@')[0],
-        email,
-        password: hashedPassword,
-        subscription: {
-          plan: 'lifetime',
-          status: 'active',
-          startDate: new Date(),
-          expiresAt: null
-        },
-        role: email.includes('admin') ? 'admin' : 'user'
-      });
-      
-      await user.save();
-      console.log('Created test user:', user._id);
-    } else {
-      console.log('Found existing user:', user._id);
-    }
-    
-    // Create JWT token
-    const payload = {
-      user: {
-        id: user.id
-      }
-    };
-    
-    jwt.sign(
-      payload,
-      process.env.JWT_SECRET || 'temporarysecret',
-      { expiresIn: '7d' },
-      (err, token) => {
-        if (err) {
-          console.error('JWT Sign error:', err);
-          return res.status(500).json({ msg: 'Error generating token' });
-        }
-        console.log('Simple login successful for user:', user._id);
-        res.json({ 
-          token, 
-          userId: user._id,
-          user: {
-            name: user.name,
-            email: user.email,
-            subscription: user.subscription,
-            role: user.role
-          }
-        });
-      }
-    );
-  } catch (err) {
-    console.error('Simple login error:', err.message);
-    res.status(500).json({ msg: 'Server error' });
-  }
-});
+
 
 module.exports = router; 
