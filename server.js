@@ -47,6 +47,9 @@ app.get('/api/test', (req, res) => {
   res.json({ message: 'API is working' });
 });
 
+app.get('/sitemap.xml', function(req, res) {
+  res.sendFile(path.join(__dirname, 'public', 'sitemap.xml'));
+});
 // Add a status endpoint for checking server connectivity
 app.get('/api/status', (req, res) => {
   res.json({
